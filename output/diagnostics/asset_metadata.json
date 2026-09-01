@@ -1,0 +1,98 @@
+[
+  {
+    "filename": "house_A.png",
+    "ortho_scale": 8.5,
+    "polygons": 2013,
+    "vertices": 1820,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "house_B.png",
+    "ortho_scale": 9.5,
+    "polygons": 2317,
+    "vertices": 2152,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "house_C.png",
+    "ortho_scale": 8.5,
+    "polygons": 1613,
+    "vertices": 1498,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "stairs.png",
+    "ortho_scale": 5.0,
+    "polygons": 216,
+    "vertices": 208,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "retaining_wall.png",
+    "ortho_scale": 6.5,
+    "polygons": 332,
+    "vertices": 252,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "fountain.png",
+    "ortho_scale": 4.2,
+    "polygons": 151,
+    "vertices": 178,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "vegetation.png",
+    "ortho_scale": 6.5,
+    "polygons": 730,
+    "vertices": 406,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  },
+  {
+    "filename": "props.png",
+    "ortho_scale": 4.2,
+    "polygons": 366,
+    "vertices": 324,
+    "camera_rotation": [
+      0.9773843811168246,
+      0.0,
+      0.7853981633974483
+    ],
+    "lighting_energy": 3.8
+  }
+]

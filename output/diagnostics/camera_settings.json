@@ -1,0 +1,20 @@
+{
+  "camera_type": "ORTHO",
+  "pitch_degrees": 56.0,
+  "yaw_degrees": 45.0,
+  "rotation_euler_radians": [
+    0.9773843811168246,
+    0.0,
+    0.7853981633974483
+  ],
+  "full_scene_ortho_scale": 23.0,
+  "asset_ortho_scale": 7.5,
+  "scene_resolution": [
+    1920,
+    1080
+  ],
+  "asset_resolution": [
+    1024,
+    1024
+  ]
+}
