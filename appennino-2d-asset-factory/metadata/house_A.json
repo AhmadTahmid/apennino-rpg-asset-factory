@@ -1,0 +1,22 @@
+{
+  "id": "house_A",
+  "semantic_type": "building",
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "visual_bounds": [
+    106,
+    32,
+    919,
+    900
+  ],
+  "world_dimensions_m": {
+    "width": 8.47,
+    "height": 9.04
+  },
+  "scale_normalization_factor": 0.9619,
+  "source_file": "house_A.png",
+  "style_profile": "appennino_v1"
+}

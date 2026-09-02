@@ -1,0 +1,22 @@
+{
+  "id": "stairs",
+  "semantic_type": "infrastructure",
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "visual_bounds": [
+    25,
+    -3,
+    1000,
+    900
+  ],
+  "world_dimensions_m": {
+    "width": 10.16,
+    "height": 9.41
+  },
+  "scale_normalization_factor": 1.0,
+  "source_file": "stairs.png",
+  "style_profile": "appennino_v1"
+}

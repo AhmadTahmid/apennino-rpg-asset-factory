@@ -1,0 +1,22 @@
+{
+  "id": "props",
+  "semantic_type": "props",
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "visual_bounds": [
+    102,
+    12,
+    923,
+    900
+  ],
+  "world_dimensions_m": {
+    "width": 8.55,
+    "height": 9.25
+  },
+  "scale_normalization_factor": 1.0,
+  "source_file": "props.png",
+  "style_profile": "appennino_v1"
+}

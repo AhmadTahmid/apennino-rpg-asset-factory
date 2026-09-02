@@ -1,0 +1,22 @@
+{
+  "id": "retaining_wall",
+  "semantic_type": "infrastructure",
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "visual_bounds": [
+    72,
+    -10,
+    952,
+    900
+  ],
+  "world_dimensions_m": {
+    "width": 9.17,
+    "height": 9.48
+  },
+  "scale_normalization_factor": 1.0,
+  "source_file": "retaining_wall.png",
+  "style_profile": "appennino_v1"
+}

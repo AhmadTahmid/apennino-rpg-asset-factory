@@ -1,0 +1,25 @@
+{
+  "id": "stairs_and_wall",
+  "semantic_type": "infrastructure",
+  "canvas_size": [
+    1024,
+    1024
+  ],
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "height_m": 2.4,
+  "world_dimensions_m": {
+    "width": 5.8,
+    "depth": 2.5,
+    "height": 2.55
+  },
+  "visual_bounds": [
+    257,
+    645,
+    779,
+    900
+  ]
+}

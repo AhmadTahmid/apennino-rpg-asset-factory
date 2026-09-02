@@ -1,0 +1,25 @@
+{
+  "id": "fountain",
+  "semantic_type": "prop_monument",
+  "canvas_size": [
+    1024,
+    1024
+  ],
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "height_m": 2.2,
+  "world_dimensions_m": {
+    "width": 2.8,
+    "depth": 2.8,
+    "height": 2.2
+  },
+  "visual_bounds": [
+    368,
+    685,
+    656,
+    920
+  ]
+}

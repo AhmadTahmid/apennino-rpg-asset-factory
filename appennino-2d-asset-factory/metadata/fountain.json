@@ -1,0 +1,22 @@
+{
+  "id": "fountain",
+  "semantic_type": "monument",
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "visual_bounds": [
+    32,
+    -14,
+    992,
+    900
+  ],
+  "world_dimensions_m": {
+    "width": 10.0,
+    "height": 9.52
+  },
+  "scale_normalization_factor": 1.0,
+  "source_file": "fountain.png",
+  "style_profile": "appennino_v1"
+}

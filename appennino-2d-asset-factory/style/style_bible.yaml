@@ -1,0 +1,76 @@
+# ==============================================================================
+# STYLE BIBLE: ITALIAN / APPENNINO 2.5D RPG ASSET FACTORY
+# Derived from Reference Target Video (frame_001.jpg, frame_003.jpg)
+# ==============================================================================
+
+meta:
+  name: "Appennino Hill-Town JRPG 2.5D"
+  version: "1.0.0"
+  target_aesthetic: "Warm, cozy, illustrated/pixelish JRPG stone village with rich verticality"
+  anti_patterns:
+    - "Generic high-fantasy glowing wizard towers"
+    - "Flat isometric mobile-game flash art"
+    - "Photorealistic 3D ray-traced sterile archviz"
+    - "Generic low-poly flat-shaded polygons"
+    - "Cold modern concrete or clean smooth plaster"
+
+color_palette:
+  masonry_limestone_base: "#D8D1C4"
+  masonry_limestone_shadow: "#A69D8F"
+  masonry_mortar_line: "#6B6358"
+  roof_terracotta_highlight: "#E67A42"
+  roof_terracotta_base: "#C75A2A"
+  roof_terracotta_shadow: "#8F3818"
+  wood_doors_timbers: "#5C3E29"
+  wood_rafters_eaves: "#422C1D"
+  shutter_olive_green: "#4E6B4A"
+  shutter_walnut_brown: "#6E4E37"
+  cobblestone_street_light: "#CBC7BD"
+  cobblestone_street_shadow: "#8E887E"
+  fountain_water_surface: "#52B2D6"
+  fountain_water_foam: "#DCF4FD"
+  geranium_flowers_red: "#D43B2A"
+  geranium_flowers_pink: "#E05A7B"
+  foliage_ivy_green: "#487A38"
+  foliage_shadow_green: "#26481E"
+  distant_mountain_haze: "#6C9A8B"
+  distant_sky_warm: "#D9EDF7"
+
+perspective_and_camera:
+  projection: "Dimetric 3/4 RPG projection (2:1 isometric slope)"
+  ground_plane_horizontal_angle_deg: 26.565
+  vertical_camera_tilt_deg: 35.0
+  light_source:
+    type: "Directional sunlight"
+    azimuth_deg: 135.0   # Coming from top-left
+    elevation_deg: 45.0  # Warm Mediterranean morning sun
+    shadow_direction: "Falls down and to the right"
+    shadow_softness: "Crisp cast shadow with subtle ambient bounce"
+
+architectural_language:
+  walls:
+    type: "Irregular roughly coursed limestone and sandstone blocks"
+    jointing: "Prominent greyish-brown mortar lines, weathered chipped corners"
+    quoins: "Large dressed corner ashlar blocks reinforcing wall edges"
+  roofs:
+    pitch_deg: 28.0
+    style: "Gable and hip roofs with aged terracotta barrel (coppi) tiles"
+    eaves: "Projecting timber rafter tails visible beneath eaves overhang"
+    ridges: "Raised decorative ridge cap tiles with mortar capping"
+  openings:
+    doors: "Round semicircular stone arches with radiating voussoirs, heavy plank wood"
+    windows: "Vertical rectangular openings, deep stone sills, wooden lintels"
+    shutters: "Louvered or solid board wooden shutters mounted outside, slightly ajar"
+  balconies_and_metal:
+    structure: "Cantilevered stone slab supported by shaped corbel brackets"
+    railings: "Wrought iron scrolls, dark charcoal-black finish"
+  street_furniture:
+    retaining_walls: "Massive batter stone walls holding stepped terraces"
+    stairs: "Stone steps climbing slopes, broad treads, rugged side coping"
+    fountains: "Carved stone basin, central spout with splashing clear water"
+
+detail_and_density_rules:
+  weathering_intensity: "Moderate-high (cracks, patchy damp mortar, climbing ivy)"
+  plant_density: "Every 2nd window has a flower box; stone corners feature climbing ivy"
+  props: "Barrels, wooden vegetable crates, wrought-iron wall lanterns"
+  pixel_density: "Clean outlines with internal illustrated painterly texturing"

@@ -1,0 +1,30 @@
+{
+  "id": "house_C",
+  "semantic_type": "building",
+  "canvas_size": [
+    1024,
+    1024
+  ],
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "door_anchor": [
+    599,
+    900
+  ],
+  "door_height_px": 201,
+  "door_height_m": 2.1,
+  "world_dimensions_m": {
+    "width": 5.4,
+    "depth": 4.2,
+    "height": 6.9
+  },
+  "visual_bounds": [
+    233,
+    233,
+    791,
+    900
+  ]
+}

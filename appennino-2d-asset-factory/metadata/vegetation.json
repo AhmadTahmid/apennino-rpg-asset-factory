@@ -1,0 +1,22 @@
+{
+  "id": "vegetation",
+  "semantic_type": "foliage",
+  "pixels_per_meter": 96.0,
+  "ground_anchor": [
+    512,
+    900
+  ],
+  "visual_bounds": [
+    99,
+    14,
+    925,
+    900
+  ],
+  "world_dimensions_m": {
+    "width": 8.6,
+    "height": 9.23
+  },
+  "scale_normalization_factor": 1.0,
+  "source_file": "vegetation.png",
+  "style_profile": "appennino_v1"
+}
