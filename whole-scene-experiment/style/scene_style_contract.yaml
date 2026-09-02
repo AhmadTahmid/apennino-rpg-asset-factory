@@ -1,0 +1,50 @@
+# Visual Style Contract: Appennino Hill-Town Scene
+# Codifies surface materials, palette, atmospheric depth, and lighting constraints.
+
+meta:
+  experiment: "Experiment B — Whole-Scene Generation"
+  scene_id: "scene_001"
+  style_anchor: "style/anchor_board.png"
+  target_aesthetic: "Illustrated 2.5D Italian/Appennino hill-town RPG environment"
+
+materials:
+  masonry:
+    description: "Old Italian Appennino limestone masonry, irregular rustic coursed blocks, exposed lime mortar joints, organic weathering and lichen stains."
+    palette:
+      base_stone: "#D8D1C4"
+      highlight_stone: "#EAE5DB"
+      shadow_stone: "#6E6962"
+      mortar_joints: "#B3ABA0"
+  roofing:
+    description: "Traditional terracotta Roman barrel tiles with corrugated texture, broken tile edges, moss patina, and exposed rafter tails under eaves."
+    palette:
+      terracotta_main: "#C75A2A"
+      terracotta_shadow: "#9E431B"
+      terracotta_highlight: "#D97341"
+      moss_patina: "#5A6643"
+  woodwork:
+    description: "Aged timber, painted olive-green exterior shutters with wooden louvers, weathered walnut wooden arched doors."
+    palette:
+      olive_shutters: "#4E6B4A"
+      walnut_doors: "#5A3825"
+      weathered_beams: "#403328"
+  foliage:
+    description: "Gnarled Mediterranean olive trees, climbing ivy clinging to retaining walls, potted red geraniums on windowsills and terrace corners."
+    palette:
+      olive_canopy: "#657D5C"
+      ivy_green: "#3B5738"
+      geranium_bloom: "#C82A2A"
+  water_and_metal:
+    palette:
+      fountain_water: "#4A9DA8"
+      wrought_iron: "#262626"
+
+lighting:
+  sun_source: "Top-left directional sunlight (~135° azimuth, 48° elevation)"
+  color_temperature: "Warm morning golden sunlight (5200K) with cool ambient sky bounce"
+  shadows: "Soft-edged directional contact shadows cast toward bottom-right (azimuth ~135°)"
+
+perspective:
+  projection_type: "2:1 Dimetric (26.565° ground plane incline)"
+  camera_elevation: "Elevated 3/4 oblique view looking across the town toward the distant valley"
+  horizon: "High horizon near top 15% of canvas, revealing distant Apennine mountain ridges"

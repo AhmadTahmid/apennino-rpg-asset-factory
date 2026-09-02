@@ -1,0 +1,107 @@
+[gd_scene load_steps=8 format=3 uid="uid://d1h2k3l4m5n6p"]
+
+[ext_resource type="Script" path="res://test_runner.gd" id="1_test_runner"]
+[ext_resource type="Texture2D" uid="uid://bg001" path="res://background_base.png" id="2_bg"]
+[ext_resource type="Texture2D" uid="uid://fg002" path="res://foreground_occlusion.png" id="3_fg"]
+[ext_resource type="Script" path="res://player.gd" id="4_player"]
+[ext_resource type="Texture2D" uid="uid://pl003" path="res://player.png" id="5_player_tex"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p1"]
+radius = 14.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fountain"]
+radius = 70.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_test_runner")
+
+[node name="BackgroundBase" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_bg")
+
+[node name="CollisionObstacles" type="StaticBody2D" parent="."]
+
+[node name="Coll_HouseA" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(220, 560, 480, 560, 480, 750, 220, 750)
+
+[node name="Coll_HouseB" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(540, 280, 840, 280, 840, 410, 540, 410)
+
+[node name="Coll_HouseC" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(1010, 280, 1370, 280, 1370, 410, 1010, 410)
+
+[node name="Coll_Shop" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(1460, 560, 1750, 560, 1750, 760, 1460, 760)
+
+[node name="Coll_WallWest" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(480, 410, 840, 410, 840, 430, 480, 430)
+
+[node name="Coll_WallEast" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(1000, 410, 1460, 410, 1460, 430, 1000, 430)
+
+[node name="Coll_Fountain" type="CollisionShape2D" parent="CollisionObstacles"]
+position = Vector2(960, 720)
+shape = SubResource("CircleShape2D_fountain")
+
+[node name="Coll_Overlook" type="CollisionPolygon2D" parent="CollisionObstacles"]
+polygon = PackedVector2Array(1160, 940, 1750, 940, 1750, 960, 1160, 960)
+
+[node name="YSortLayer" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(780, 820)
+script = ExtResource("4_player")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("CircleShape2D_p1")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+position = Vector2(0, -28)
+texture = ExtResource("5_player_tex")
+
+[node name="ForegroundOcclusion" type="Sprite2D" parent="."]
+z_index = 50
+position = Vector2(960, 540)
+texture = ExtResource("3_fg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="StatusBox" type="ColorRect" parent="CanvasLayer"]
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 820.0
+offset_bottom = 120.0
+color = Color(0.08, 0.1, 0.14, 0.88)
+
+[node name="StatusLabel" type="Label" parent="CanvasLayer"]
+offset_left = 45.0
+offset_top = 40.0
+offset_right = 800.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.96, 0.62, 0.04, 1)
+text = "Initializing Automated Playability Suite..."
+
+[node name="SubStatus" type="Label" parent="CanvasLayer"]
+offset_left = 45.0
+offset_top = 75.0
+offset_right = 800.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.8, 0.84, 0.9, 1)
+text = "Node: scene_001 | Godot 4.7.2 Forward+ | 1920x1080 Native 2.5D"
+
+[node name="LogBox" type="ColorRect" parent="CanvasLayer"]
+offset_left = 30.0
+offset_top = 820.0
+offset_right = 720.0
+offset_bottom = 1040.0
+color = Color(0.08, 0.1, 0.14, 0.85)
+
+[node name="LogLabel" type="Label" parent="CanvasLayer"]
+offset_left = 45.0
+offset_top = 830.0
+offset_right = 700.0
+offset_bottom = 1030.0
+theme_override_colors/font_color = Color(0.85, 0.88, 0.92, 1)
+theme_override_font_sizes/font_size = 13
+text = "Playability Test Log:"

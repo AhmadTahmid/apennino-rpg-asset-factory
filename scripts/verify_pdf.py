@@ -35,6 +35,6 @@ def verify_pdf(pdf_path, expected_pages=None):
 
 
 if __name__ == "__main__":
-    verify_pdf(BUNDLE_DIR / "CHATGPT_VISUAL_REVIEW.pdf", expected_pages=24)
-    verify_pdf(BUNDLE_DIR / "CHATGPT_VISUAL_REVIEW_LITE.pdf", expected_pages=10)
+    verify_pdf(BUNDLE_DIR / "CHATGPT_VISUAL_REVIEW.pdf", expected_pages=34)
+    verify_pdf(BUNDLE_DIR / "CHATGPT_VISUAL_REVIEW_LITE.pdf", expected_pages=12)
     print("\n--> All PDF verification checks passed successfully!")

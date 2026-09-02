@@ -1,6 +1,8 @@
 # Appennino RPG Asset Factory — Independent AI & Peer Review
 
-This document provides a self-contained, reviewable record of the **Appennino RPG Asset Factory Experiments**. It allows external AI assistants (e.g. ChatGPT) and human technical artists to audit all generated visual outputs, underlying models, conditioning constraints, and composition rules directly from GitHub.
+This document provides a self-contained, reviewable record of the **Appennino RPG Asset Factory Experiments**:
+- **Experiment A**: Procedural 3D Blender vs. Independent 2D AI Sprites.
+- **Experiment B**: Whole-Scene Generation → Semantic Decomposition → Playable RPG Node in Godot 4.7.2.
 
 ---
 
@@ -9,12 +11,32 @@ This document provides a self-contained, reviewable record of the **Appennino RP
 For multimodal AI systems (such as ChatGPT) that cannot directly parse raw image binaries through the GitHub API, download and inspect the complete multi-page PDF visual review dossiers:
 
 - 📑 **[CHATGPT_VISUAL_REVIEW.pdf](review_bundle/CHATGPT_VISUAL_REVIEW.pdf)**  
-  *(Full 24-page high-resolution evidence dossier: Reference, Baselines, Scaffolds, Composites, 3D Renders, Asset Audits, and Diagnostics — 6.77 MB)*
+  *(Full 34-page high-resolution evidence portfolio covering Experiments A & B: Reference, Scaffolds, Composites, Whole-Scene Blueprint, Beauty Master, Decomposition Diff, and Godot Playability — 7.72 MB)*
   - **Direct Raw Download**: [https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW.pdf](https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW.pdf)
 
 - 📑 **[CHATGPT_VISUAL_REVIEW_LITE.pdf](review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf)**  
-  *(Essential 10-page compact summary dossier — 2.34 MB)*
+  *(Essential 12-page compact summary dossier — 1.81 MB)*
   - **Direct Raw Download**: [https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf](https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf)
+
+- 🎮 **[scene_001_playability.mp4](review_bundle/scene_001_playability.mp4)**  
+  *(1080p 60 FPS video recording of the automated Godot 4.7.2 test runner verifying all 8 critical playability tests — 544 KB)*
+  - **Direct Raw Download**: [https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/scene_001_playability.mp4](https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/scene_001_playability.mp4)
+
+---
+
+## 🏆 Experiment B: Whole-Scene Generation → Playable Node
+
+![Experiment B Beauty Master](review_bundle/exp_b_beauty_master.png)
+
+*The winning whole-scene beauty master (1920×1080). Eliminates the asset-collage failure mode by rendering the entire 36m × 24m environment under unified morning lighting, single ground perspective, and cohesive atmosphere.*
+
+![Godot 4.7.2 Playable Harness](review_bundle/exp_b_gameplay_screenshot.png)
+
+*Godot 4.7.2 Forward+ in-engine gameplay verification. Player climbs the central stone staircase ascending from Lower Piazza (Z=0.0m) to Upper Terrace (Z=2.8m). Walkability and collision are derived from `scene_001.json` with zero manual drawing.*
+
+- **Full Technical Report**: [`whole-scene-experiment/EXPERIMENT_REPORT.md`](whole-scene-experiment/EXPERIMENT_REPORT.md)
+- **All 8/8 Playability Tests Passed**: Fountain Orbit, Wall Collision Blocking, Roof Eaves Occlusion, Olive Tree Canopy, Staircase Ascent, Upper Terrace Patrol, Staircase Descent, Scenic Overlook.
+- **Decomposition Parity**: **PSNR = 100.00 dB** (0.0 pixel error).
 
 ---
 

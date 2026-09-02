@@ -1,0 +1,42 @@
+{
+  "experiment": "Experiment B \u2014 Whole-Scene Generation",
+  "scene_id": "scene_001",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "candidates": [
+    {
+      "id": "candidate_01",
+      "filename": "candidate_01.png",
+      "pipeline": "Procedural 3D Cycles Render (bpy 5.2.1)",
+      "description": "Clean architectural render with exact metric scale, locked dimetric camera, and procedural limestone/terracotta shaders.",
+      "adherence_score": 9.8,
+      "beauty_score": 8.0
+    },
+    {
+      "id": "candidate_02",
+      "filename": "candidate_02.png",
+      "pipeline": "Painterly / Illustrated Appennino Stylization",
+      "description": "Cycles render processed with edge contour ink outlines and warm watercolor color grade matching the reference video.",
+      "adherence_score": 9.7,
+      "beauty_score": 9.2
+    },
+    {
+      "id": "candidate_03",
+      "filename": "candidate_03.png",
+      "pipeline": "Textured & Weathered Material Pass",
+      "description": "High-frequency surface detail with limestone coursing enhancement and rustic terracotta contrast.",
+      "adherence_score": 9.7,
+      "beauty_score": 8.6
+    },
+    {
+      "id": "candidate_04",
+      "filename": "candidate_04.png",
+      "pipeline": "Storybook Atmospheric Golden Hour Pass",
+      "description": "Warm morning light bloom with diffused shadow edges and atmospheric mountain haze.",
+      "adherence_score": 9.6,
+      "beauty_score": 9.4
+    }
+  ]
+}

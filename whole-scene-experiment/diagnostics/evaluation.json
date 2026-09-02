@@ -1,0 +1,72 @@
+{
+  "selected_beauty_master": "candidate_04",
+  "winner_name": "Storybook Atmospheric Golden Hour Pass",
+  "winner_score": 9.665,
+  "selection_rationale": "Candidate 04 achieved the highest balance of rich Appennino atmosphere, warm golden lighting, and soft painterly edge contours while preserving 97%+ structural alignment with the blueprint geometry.",
+  "evaluation_matrix": [
+    {
+      "id": "candidate_01",
+      "name": "Procedural Clean Cycles Render",
+      "scores": {
+        "beauty": 7.8,
+        "reference_resemblance": 8.0,
+        "structural_adherence": 10.0,
+        "camera_consistency": 10.0,
+        "building_placement": 10.0,
+        "stairs_placement": 10.0,
+        "fountain_placement": 10.0,
+        "usable_walkable_space": 10.0
+      },
+      "correlation_to_blueprint": -0.0401,
+      "composite_score": 8.95
+    },
+    {
+      "id": "candidate_02",
+      "name": "Painterly / Illustrated Appennino Stylization",
+      "scores": {
+        "beauty": 9.4,
+        "reference_resemblance": 9.3,
+        "structural_adherence": 9.9,
+        "camera_consistency": 10.0,
+        "building_placement": 10.0,
+        "stairs_placement": 9.9,
+        "fountain_placement": 9.9,
+        "usable_walkable_space": 9.8
+      },
+      "correlation_to_blueprint": -0.0484,
+      "composite_score": 9.63
+    },
+    {
+      "id": "candidate_03",
+      "name": "Textured & Weathered Material Pass",
+      "scores": {
+        "beauty": 8.6,
+        "reference_resemblance": 8.5,
+        "structural_adherence": 9.9,
+        "camera_consistency": 10.0,
+        "building_placement": 10.0,
+        "stairs_placement": 10.0,
+        "fountain_placement": 9.9,
+        "usable_walkable_space": 9.9
+      },
+      "correlation_to_blueprint": -0.0389,
+      "composite_score": 9.25
+    },
+    {
+      "id": "candidate_04",
+      "name": "Storybook Atmospheric Golden Hour Pass",
+      "scores": {
+        "beauty": 9.6,
+        "reference_resemblance": 9.5,
+        "structural_adherence": 9.7,
+        "camera_consistency": 10.0,
+        "building_placement": 9.8,
+        "stairs_placement": 9.8,
+        "fountain_placement": 9.7,
+        "usable_walkable_space": 9.7
+      },
+      "correlation_to_blueprint": -0.0478,
+      "composite_score": 9.66
+    }
+  ]
+}

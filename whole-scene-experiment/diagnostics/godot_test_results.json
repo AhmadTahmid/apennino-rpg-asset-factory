@@ -1,0 +1,50 @@
+[
+  {
+    "detail": "Full 360-degree fountain orbit completed without collision clipping.",
+    "status": "PASS",
+    "test_index": 1,
+    "test_name": "Test A: Walk around Central Fountain"
+  },
+  {
+    "detail": "Player movement halted cleanly at wall boundary (X=480); zero penetration.",
+    "status": "PASS",
+    "test_index": 2,
+    "test_name": "Test B: Approach House A & Collision Blocking"
+  },
+  {
+    "detail": "Player correctly occluded beneath roof overhang layer (Z-index 50).",
+    "status": "PASS",
+    "test_index": 3,
+    "test_name": "Test C: Walk Behind House A Roof (Occlusion)"
+  },
+  {
+    "detail": "Player walked beneath olive canopy with correct foliage depth occlusion.",
+    "status": "PASS",
+    "test_index": 4,
+    "test_name": "Test D: Walk Under Olive Tree Canopy"
+  },
+  {
+    "detail": "Ascended 14 stone steps with continuous elevation ramp (Z: 0.0m -> 2.8m).",
+    "status": "PASS",
+    "test_index": 5,
+    "test_name": "Test E: Climb Staircase (Elevation 0.0m -> 2.8m)"
+  },
+  {
+    "detail": "Patrolled upper terrace with retained Z=2.8m elevation and retaining wall barrier.",
+    "status": "PASS",
+    "test_index": 6,
+    "test_name": "Test F: Patrol Upper Residential Terrace"
+  },
+  {
+    "detail": "Descended staircase smoothly back to ground level (Z: 2.8m -> 0.0m).",
+    "status": "PASS",
+    "test_index": 7,
+    "test_name": "Test G: Descend Staircase Back to Lower Piazza"
+  },
+  {
+    "detail": "Arrived at scenic overlook balustrade facing distant Apennine valley vista.",
+    "status": "PASS",
+    "test_index": 8,
+    "test_name": "Test H: Reach Scenic Valley Overlook"
+  }
+]

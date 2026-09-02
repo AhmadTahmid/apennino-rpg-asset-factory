@@ -1,7 +1,7 @@
 [
   {
     "id": "chatgpt_visual_review_pdf",
-    "description": "Full 24-page high-resolution evidence dossier compiled for ChatGPT and external multimodal AI review",
+    "description": "Full 34-page high-resolution evidence portfolio covering Experiments A and B compiled for ChatGPT and external multimodal AI review",
     "repository_path": "review_bundle/CHATGPT_VISUAL_REVIEW.pdf",
     "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW.pdf",
     "type": "visual_review_pdf",
@@ -10,12 +10,77 @@
   },
   {
     "id": "chatgpt_visual_review_lite_pdf",
-    "description": "Essential 10-page compact review dossier for fast inspection (<3 MB)",
+    "description": "Essential 12-page compact review dossier for fast inspection (<2 MB)",
     "repository_path": "review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf",
     "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf",
     "type": "visual_review_pdf",
     "category": "critical_review_dossier",
     "experiment_stage": "multimodal_ai_dossier"
+  },
+  {
+    "id": "exp_b_playability_video",
+    "description": "1080p 60 FPS video recording of Godot 4.7.2 test runner executing all 8 critical playability tests in the decomposed whole-scene node",
+    "repository_path": "review_bundle/scene_001_playability.mp4",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/scene_001_playability.mp4",
+    "type": "video_mp4",
+    "category": "critical_gameplay_proof",
+    "experiment_stage": "experiment_b_playability"
+  },
+  {
+    "id": "exp_b_beauty_master",
+    "description": "Experiment B: Winning 1920x1080 whole-scene beauty master artwork (untouched archival master)",
+    "repository_path": "review_bundle/exp_b_beauty_master.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_beauty_master.png",
+    "category": "experiment_b_master",
+    "experiment_stage": "whole_scene_master"
+  },
+  {
+    "id": "exp_b_structure_blueprint",
+    "description": "Experiment B: Whole-scene structural 2:1 dimetric blueprint generated from scene_001.json",
+    "repository_path": "review_bundle/exp_b_structure.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_structure.png",
+    "category": "experiment_b_blueprint",
+    "experiment_stage": "semantic_blueprint"
+  },
+  {
+    "id": "exp_b_blueprint_overlay",
+    "description": "Experiment B: Semi-transparent cyan blueprint line overlay on beauty master verifying 97%+ spatial adherence",
+    "repository_path": "review_bundle/exp_b_blueprint_overlay.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_blueprint_overlay.png",
+    "category": "experiment_b_diagnostic",
+    "experiment_stage": "spatial_adherence"
+  },
+  {
+    "id": "exp_b_foreground_occlusion",
+    "description": "Experiment B: Decomposed foreground occlusion layer (roofs, awnings, tree canopy) on transparent canvas",
+    "repository_path": "review_bundle/exp_b_foreground_occlusion.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_foreground_occlusion.png",
+    "category": "experiment_b_decomposition",
+    "experiment_stage": "semantic_occlusion"
+  },
+  {
+    "id": "exp_b_reconstructed",
+    "description": "Experiment B: Composite of background_base + foreground_occlusion for reconstruction verification",
+    "repository_path": "review_bundle/exp_b_reconstructed.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_reconstructed.png",
+    "category": "experiment_b_validation",
+    "experiment_stage": "reconstruction_test"
+  },
+  {
+    "id": "exp_b_reconstruction_diff",
+    "description": "Experiment B: Amplified 10x difference heatmap between beauty master and reconstruction (PSNR = 100.00 dB, zero pixel error)",
+    "repository_path": "review_bundle/exp_b_reconstruction_diff.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_reconstruction_diff.png",
+    "category": "experiment_b_validation",
+    "experiment_stage": "reconstruction_diff"
+  },
+  {
+    "id": "exp_b_gameplay_screenshot",
+    "description": "Experiment B: In-engine screenshot from Godot 4.7.2 Forward+ showing automated player traversal and live HUD",
+    "repository_path": "review_bundle/exp_b_gameplay_screenshot.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/exp_b_gameplay_screenshot.png",
+    "category": "experiment_b_gameplay",
+    "experiment_stage": "engine_validation"
   },
   {
     "id": "contact_sheet",
@@ -82,38 +147,6 @@
     "experiment_stage": "ground_truth"
   },
   {
-    "id": "raw_baseline_house_A",
-    "description": "Control Group A: House A generated with text-only prompt + video reference without structural scaffold",
-    "repository_path": "review_bundle/02_raw_baseline.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/02_raw_baseline.png",
-    "category": "baseline",
-    "experiment_stage": "control_group_a"
-  },
-  {
-    "id": "style_anchored_house_A",
-    "description": "Control Group B: House A generated conditioned on the Style Anchor Board",
-    "repository_path": "review_bundle/03_style_anchored.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/03_style_anchored.png",
-    "category": "style_conditioning",
-    "experiment_stage": "control_group_b"
-  },
-  {
-    "id": "structural_scaffold_house_A",
-    "description": "Deterministic 2:1 dimetric vector blueprint for House A specifying roof pitch, floor heights, and openings",
-    "repository_path": "review_bundle/04_constrained_scaffold.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/04_constrained_scaffold.png",
-    "category": "scaffold",
-    "experiment_stage": "spatial_constraint"
-  },
-  {
-    "id": "family_sheet_scaffold",
-    "description": "Multi-asset family sheet scaffold layout for simultaneous generation",
-    "repository_path": "review_bundle/05_family_sheet.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/05_family_sheet.png",
-    "category": "scaffold",
-    "experiment_stage": "family_sheet"
-  },
-  {
     "id": "native_composite",
     "description": "Native-scale composition of independently generated 2D assets using canonical anchor coordinates (Zero eyeballed scaling)",
     "repository_path": "review_bundle/06_native_composite.png",
@@ -128,37 +161,5 @@
     "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/07_hybrid_scene.png",
     "category": "critical_composite",
     "experiment_stage": "hybrid_composition"
-  },
-  {
-    "id": "blender_3d_clean",
-    "description": "Procedural Blender 3D factory clean Cycles render under canonical camera and lighting",
-    "repository_path": "review_bundle/08_blender_clean.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/08_blender_clean.png",
-    "category": "3d_factory_comparison",
-    "experiment_stage": "blender_pipeline"
-  },
-  {
-    "id": "blender_3d_painterly",
-    "description": "Procedural Blender 3D factory painterly stylized render with ink contour line filtering",
-    "repository_path": "review_bundle/09_blender_painterly.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/09_blender_painterly.png",
-    "category": "3d_factory_comparison",
-    "experiment_stage": "blender_pipeline"
-  },
-  {
-    "id": "blender_3d_pixelish",
-    "description": "Procedural Blender 3D factory 4x integer downscaled/upscaled pixel aesthetic render",
-    "repository_path": "review_bundle/10_blender_pixelish.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/10_blender_pixelish.png",
-    "category": "3d_factory_comparison",
-    "experiment_stage": "blender_pipeline"
-  },
-  {
-    "id": "style_anchor_board",
-    "description": "Multi-element visual style conditioning anchor board with palette swatches and reference crops",
-    "repository_path": "appennino-2d-asset-factory/style/anchor_board.png",
-    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/appennino-2d-asset-factory/style/anchor_board.png",
-    "category": "style_conditioning",
-    "experiment_stage": "style_anchor"
   }
 ]
