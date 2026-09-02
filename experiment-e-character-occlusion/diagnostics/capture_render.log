@@ -1,0 +1,24 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Parameter "t" is null.
+   at: texture_2d_get (./servers/rendering/dummy/storage/texture_storage.h:110)
+   GDScript backtrace (most recent call first):
+       [0] _save_viewport (res://tests/capture_render.gd:40)
+       [1] _capture_sequence (res://tests/capture_render.gd:20)
+       [2] _settle_frames (res://tests/capture_render.gd:36)
+Capture failed for res://diagnostics/runtime_occlusion_capture.png: renderer returned no image
+ERROR: Parameter "t" is null.
+   at: texture_2d_get (./servers/rendering/dummy/storage/texture_storage.h:110)
+   GDScript backtrace (most recent call first):
+       [0] _save_viewport (res://tests/capture_render.gd:40)
+       [1] _capture_sequence (res://tests/capture_render.gd:24)
+       [2] _settle_frames (res://tests/capture_render.gd:36)
+Capture failed for res://diagnostics/runtime_occlusion_capture_player_above.png: renderer returned no image
+ERROR: Parameter "t" is null.
+   at: texture_2d_get (./servers/rendering/dummy/storage/texture_storage.h:110)
+   GDScript backtrace (most recent call first):
+       [0] _save_viewport (res://tests/capture_render.gd:40)
+       [1] _capture_sequence (res://tests/capture_render.gd:28)
+       [2] _settle_frames (res://tests/capture_render.gd:36)
+Capture failed for res://diagnostics/runtime_occlusion_baseline.png: renderer returned no image
+CAPTURE_SUMMARY normal=false mutation=false baseline=false

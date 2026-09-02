@@ -1,0 +1,419 @@
+{
+  "passed": true,
+  "failures": [],
+  "pipeline": "deterministic checkerboard flood extraction + nearest-neighbor atlas normalization + sparse exact-source foreground mask",
+  "source_sheet": {
+    "path": "assets\\source\\traveler_generated_checkerboard.png",
+    "sha256": "AEBFDF032F67777B468766425A4D9995E8379B9D28AB7D413C0C3547B0A92C32",
+    "dimensions": [
+      996,
+      1578
+    ],
+    "mode": "RGB"
+  },
+  "atlas": {
+    "path": "assets\\traveler_walk_sheet.png",
+    "sha256": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+    "dimensions": [
+      144,
+      256
+    ],
+    "mode": "RGBA",
+    "grid": [
+      3,
+      4
+    ],
+    "cell_size": [
+      48,
+      64
+    ],
+    "row_semantics": [
+      "down / south",
+      "left / west",
+      "right / east",
+      "up / north"
+    ],
+    "idle_column": 1,
+    "frame_order": [
+      0,
+      1,
+      2,
+      1
+    ],
+    "frames": [
+      {
+        "row": 0,
+        "column": 0,
+        "semantic_row": "down / south",
+        "source_cell": [
+          0,
+          0,
+          332,
+          397
+        ],
+        "source_subject_bbox": [
+          127,
+          76,
+          273,
+          358
+        ],
+        "final_subject_bbox": [
+          10,
+          8,
+          37,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "9E58CCA8D49C3365331519B5C7CC20DFDD9ABFCD57B23787E5579D80B1A0C6D4"
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "semantic_row": "down / south",
+        "source_cell": [
+          332,
+          0,
+          664,
+          397
+        ],
+        "source_subject_bbox": [
+          95,
+          76,
+          240,
+          350
+        ],
+        "final_subject_bbox": [
+          10,
+          8,
+          38,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "E11F3E67BA49DEAE615DB2709B668889BEAD8C60BB5C54AC13D6D0A1023959CB"
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "semantic_row": "down / south",
+        "source_cell": [
+          664,
+          0,
+          996,
+          397
+        ],
+        "source_subject_bbox": [
+          48,
+          80,
+          190,
+          359
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          37,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "7AC3E1CD2A95022D1839AF70FE0522839B18D090DDC58EA02DB24C7F1972B6D1"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "semantic_row": "left / west",
+        "source_cell": [
+          0,
+          397,
+          332,
+          754
+        ],
+        "source_subject_bbox": [
+          131,
+          43,
+          262,
+          313
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          36,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "9568F095487BCF6788CE078306F4CCD752F433B2BED3BF6002DE63BF68EDD15A"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "semantic_row": "left / west",
+        "source_cell": [
+          332,
+          397,
+          664,
+          754
+        ],
+        "source_subject_bbox": [
+          115,
+          44,
+          209,
+          316
+        ],
+        "final_subject_bbox": [
+          15,
+          8,
+          33,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "D615DB19F9B453F579AAF41A4A8BD830FCFDD59DCEFA37220DE44D155DC70429"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "semantic_row": "left / west",
+        "source_cell": [
+          664,
+          397,
+          996,
+          754
+        ],
+        "source_subject_bbox": [
+          44,
+          46,
+          179,
+          315
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          37,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "6A217FA8BBFD9692CD6F7D3973F4C8A30E4011DF3599C7C62ED87E71ABDABBA8"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "semantic_row": "right / east",
+        "source_cell": [
+          0,
+          754,
+          332,
+          1106
+        ],
+        "source_subject_bbox": [
+          134,
+          42,
+          268,
+          307
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          37,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "F978DE7EEFD22A739ED3E5AA8996F34BB8B4196191B2F10CD8968B4B52BC8AAE"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "semantic_row": "right / east",
+        "source_cell": [
+          332,
+          754,
+          664,
+          1106
+        ],
+        "source_subject_bbox": [
+          112,
+          44,
+          204,
+          311
+        ],
+        "final_subject_bbox": [
+          15,
+          8,
+          33,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "DC9DEFB03D1665988D4058D3C0A66C07627DC00FDB5728E37974ACD937100444"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "semantic_row": "right / east",
+        "source_cell": [
+          664,
+          754,
+          996,
+          1106
+        ],
+        "source_subject_bbox": [
+          43,
+          45,
+          173,
+          311
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          36,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "30D080E40538B4DE3832494D168F10CE975FD741DFCD88A4BEC4D1AE9A7B3D8D"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "semantic_row": "up / north",
+        "source_cell": [
+          0,
+          1106,
+          332,
+          1578
+        ],
+        "source_subject_bbox": [
+          127,
+          38,
+          259,
+          311
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          36,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "E405BA98E4EFC340FAE60725E366DF0742755F118AA5514E225DAF1421772B78"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "semantic_row": "up / north",
+        "source_cell": [
+          332,
+          1106,
+          664,
+          1578
+        ],
+        "source_subject_bbox": [
+          91,
+          39,
+          223,
+          309
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          36,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "9092654BA0F787D338CDBABDB7735079C9D9F0CD1216D3650FB3540FB8DF0012"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "semantic_row": "up / north",
+        "source_cell": [
+          664,
+          1106,
+          996,
+          1578
+        ],
+        "source_subject_bbox": [
+          45,
+          39,
+          175,
+          311
+        ],
+        "final_subject_bbox": [
+          11,
+          8,
+          36,
+          60
+        ],
+        "foot_baseline_y": 59,
+        "pixel_sha256": "17DC4452E1148505D02CFBF7EDD1E1478F3BEA9CC266C041B4D728A7DBF31D90"
+      }
+    ]
+  },
+  "occluder": {
+    "declared_outer_polygon": [
+      [
+        668,
+        645
+      ],
+      [
+        681,
+        638
+      ],
+      [
+        697,
+        640
+      ],
+      [
+        710,
+        648
+      ],
+      [
+        720,
+        661
+      ],
+      [
+        722,
+        676
+      ],
+      [
+        717,
+        691
+      ],
+      [
+        708,
+        703
+      ],
+      [
+        691,
+        706
+      ],
+      [
+        677,
+        697
+      ],
+      [
+        669,
+        684
+      ],
+      [
+        665,
+        663
+      ]
+    ],
+    "occlusion_anchor": [
+      704,
+      675
+    ],
+    "alpha_bbox": [
+      665,
+      652,
+      722,
+      707
+    ],
+    "opaque_pixel_count": 2072,
+    "full_canvas_pixel_count": 1573352,
+    "alpha_occupancy_fraction": 0.001316933527907296,
+    "source_equal_nontransparent_pixels": 2072,
+    "source_mismatch_nontransparent_pixels": 0,
+    "source_scene_sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+    "mask_path": "assets\\southwest_planter_mask.png",
+    "mask_sha256": "E57567DF8FD4B9C30AEB8D8452E5F28FD62053AB906330B9D2E04486B9AD5C91",
+    "foreground_path": "assets\\southwest_planter_foreground.png",
+    "foreground_sha256": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+    "alignment": "full-canvas 1672x941; identity transform; integer aligned"
+  }
+}

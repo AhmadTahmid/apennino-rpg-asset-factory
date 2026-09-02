@@ -52,6 +52,32 @@ The playable suite is deliberately run against two corruptions: a shifted
 fountain and an invisible corridor blocker. Both must fail. This proves the
 checks depend on the behavior they claim to test.
 
+### 6. Generated sprite sheets need structural verification, not visual trust
+
+Experiment E's first character generation looked like a transparent 3×4 atlas,
+but both it and a targeted alpha-repair edit were ordinary RGB images with a
+baked checkerboard. Equal-height slicing also clipped the north-facing row
+because the generator left asymmetric vertical margins.
+
+The usable workflow was: preserve both failed originals, inspect image mode and
+dimensions, remove only border-connected checkerboard pixels, keep the largest
+character component in each cell, slice at measured whitespace midlines, and
+normalize frames to a common baseline. The final atlas passes alpha, cell,
+distinct-frame, clipping, baseline, directional-runtime, and temporal-runtime
+checks. “Looks like a sprite sheet” is not an asset contract.
+
+### 7. One local foreground layer can be proven causally
+
+Experiment E extracts a sparse full-canvas planter layer from the exact final
+scene. Every one of its 2,072 visible RGB pixels equals the source, placement is
+identity-aligned, and the selected pose overlaps 130 of 989 traveler pixels.
+A real renderer shows all 130 restored to foreground pixels in correct order
+and all 130 replaced by player pixels when the z-order is reversed.
+
+This validates one source-locked overlap, not generalized Y-sorting. The useful
+pattern is: sparse reviewed mask + exact source-pixel equality + preregistered
+overlap + real-render baseline + reversed-order mutation.
+
 ## Failure patterns worth reusing elsewhere
 
 ### Generator self-certification
@@ -91,6 +117,29 @@ The initial south waypoint looked safe but placed the player's foot collider
 too close to the boundary. Real movement blocked. The waypoint was corrected
 on visible paving, and the stumble remains recorded in Experiment D's report.
 
+### Visually plausible occlusion pose accepted without alpha overlap
+
+The first proposed planter pose `(704,660)` lay inside the court and looked
+reasonable, but the traveler and mask shared zero opaque pixels. Preflight
+rejected it. `(704,675)` remains inside the same walkable polygon and yields a
+measured 130/989 overlap. Layering tests need alpha intersection, not coordinate
+intuition.
+
+### Semantic cutout that secretly copies background
+
+The first planter mask retained pale paving inside its outer polygon. It would
+have hidden the player with a copied cobblestone patch while appearing locally
+seamless. Hue-aware selection, connected-component cleanup, reviewed clear
+points, source-pixel equality, and a strict occupancy ceiling removed that
+failure mode.
+
+### Headless rendering assumed to prove pixels
+
+Godot's headless dummy renderer ran logic but returned no viewport image. The
+final workflow separates headless physics/animation tests from a short hidden
+real-renderer capture, then independently compares correct order, wrong order,
+and no-player baseline pixels.
+
 ## Architecture decision table
 
 | Need | Current best approach | Confidence |
@@ -99,6 +148,7 @@ on visible paving, and the stumble remains recorded in Experiment D's report.
 | Rich atmosphere and coherent full-frame concept art | Whole-scene neural generation | High |
 | Repaint while retaining exact masks | Not yet solved with available whole-frame generation | High confidence in current failure |
 | Small playable vignette from final art | Manual geometry authored against final pixels | Validated for one node |
+| One foreground overlap in flattened art | Sparse exact-source layer + real-render mutation | Validated locally |
 | Automatic collision/occlusion extraction | Open question | Unvalidated |
 | Cross-node continuity | Open question | Unvalidated |
 
@@ -114,12 +164,18 @@ on visible paving, and the stumble remains recorded in Experiment D's report.
    the final pixels.
 6. Build the smallest playable route first.
 7. Require expected/actual assertions and known-bad mutation runs.
-8. Add one capability at a time: player art, occlusion, interaction, elevation,
-   then multiple nodes.
+8. Validate generated game assets structurally: mode, alpha, grid, baselines,
+   direction mapping, and temporal progression.
+9. For foreground claims, compare real rendered pixels against a baseline and a
+   deliberately reversed z-order.
+10. Add one capability at a time: player art, occlusion, interaction,
+    elevation, then multiple nodes.
 
 ## Current macro status
 
-The project has reached a defensible minimum playable result. It has not yet
-reached automatic video-to-map compilation. The most promising immediate path
-is to expand the validated art-first node incrementally while continuing a
+The project has reached a defensible minimum playable result with animated
+embodiment and one local depth interaction. It has not reached automatic
+video-to-map compilation, production-matched character integration, general
+scene depth, or multiple connected nodes. The most promising immediate path is
+to expand the validated art-first node incrementally while continuing a
 separate geometry-control research branch.

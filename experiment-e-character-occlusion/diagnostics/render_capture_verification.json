@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "failures": [],
+  "renderer": "Godot GL Compatibility real Windows display driver (not headless dummy)",
+  "capture_hashes": {
+    "correct_order": "90C98563D5646A64AD0DE8041FB2787B3B40F72FF71E009F56FF430F87A92940",
+    "player_above_mutation": "F347B63A5BB05A93080C0CD8D1524F22A73F8D13D4601B1A5722FB4E6F2D7469",
+    "no_player_baseline": "6839E274A3AE013C96D49EF5C7090213F79FD88C3AD9AD55843E54F41BF0079E",
+    "correct_order_review_crop": "F2E5D18F619961DF57EEB8D3F8C94163A08AC0730F2E84A8ED6D83C8C6B0C52E",
+    "player_above_review_crop": "D4C1E256D67F171A828AACCBE335C6EB95D707130706FB8B060E407536612834"
+  },
+  "capture_dimensions": [
+    1672,
+    941
+  ],
+  "anchor": [
+    704,
+    675
+  ],
+  "declared_overlap_pixels": 130,
+  "correct_order_overlap_pixels_equal_baseline": 130,
+  "player_above_overlap_pixels_different_from_baseline": 130,
+  "visible_player_pixels_outside_mask": 859,
+  "correct_order_visible_player_pixels": 859,
+  "mutation_pixels_equal_correct_outside_mask": 859,
+  "runtime_baseline_source_matches_under_full_mask": 2072,
+  "full_mask_opaque_pixels": 2072,
+  "headless_limit": "Godot's dummy headless renderer returned no viewport texture; diagnostics/capture_render.log preserves that expected failed route."
+}

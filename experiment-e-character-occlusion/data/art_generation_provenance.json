@@ -1,0 +1,55 @@
+{
+  "experiment": "experiment_e_character_occlusion",
+  "generator": "OpenAI built-in image generation tool",
+  "reported_model": null,
+  "model_note": "The tool did not expose a model identifier.",
+  "reference_images": [
+    {
+      "path": "../assets/control_01.png",
+      "role": "target in-game scene, scale, palette, and local character context",
+      "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F"
+    },
+    {
+      "path": "../../appennino-2d-asset-factory/style/anchor_board.png",
+      "role": "binding Appennino visual language"
+    }
+  ],
+  "attempts": [
+    {
+      "id": "traveler_generation_01",
+      "timestamp_utc": "2026-09-02T13:34:18Z",
+      "tool_output_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-bd7bc9bb-6626-4652-85a7-642c27970c11.png",
+      "preserved_copy": "../assets/source/traveler_generated_checkerboard.png",
+      "sha256": "AEBFDF032F67777B468766425A4D9995E8379B9D28AB7D413C0C3547B0A92C32",
+      "dimensions_px": [996, 1578],
+      "mode": "RGB",
+      "requested_true_alpha": true,
+      "actual_true_alpha": false,
+      "result": "usable character poses and directional consistency; failed transparency because the checkerboard was baked into RGB pixels",
+      "prompt": "Use the attached Appennino piazza scene as the target in-game scale and the attached anchor board as the binding visual language.\n\nCreate one production-ready transparent PNG sprite sheet for a top-down/dimetric 2D RPG traveler.\n\nASSET TYPE AND LAYOUT\n- Exactly 12 full-body walk-cycle frames in a strict, evenly spaced 3-column by 4-row grid.\n- Row 1: facing down/south, three frames: left step, neutral, right step.\n- Row 2: facing left/west, three frames: left step, neutral, right step.\n- Row 3: facing right/east, three frames: left step, neutral, right step.\n- Row 4: facing up/north, three frames: left step, neutral, right step.\n- Every cell must have identical dimensions, identical foot baseline, centered character placement, and generous empty padding.\n- No labels, grid lines, borders, guides, text, scenery, ground, floor tile, cast shadow, glow, platform, or extra figures.\n- The entire background and every gap between frames must be genuine alpha transparency.\n\nCHARACTER\n- One consistent adult Appennino traveler/wayfarer, clearly distinct from the baked red-shirt protagonist in the piazza.\n- Muted teal-blue short vest or coat over a warm cream shirt, charcoal-brown trousers, worn brown walking boots, and a small tan cross-body satchel.\n- Dark chestnut hair, readable but restrained face, practical rural Italian mountain-town silhouette.\n- No red tunic, no bright red dominant garment, no weapon, no armor, no hat, no cape.\n- Preserve exactly the same identity, proportions, clothes, colors, satchel placement, and scale across all twelve frames.\n- Natural compact walk cycle; hands and feet change pose but the body volume does not drift.\n\nSTYLE AND SCALE\n- Match the reference scene's coherent late-1990s/early-2000s JRPG pixel-painterly look: crisp clustered pixels, warm limestone-world palette, modest contrast, selective dark outlines, painterly pixel texture, and dimetric perspective.\n- At final game scale the character should read at roughly 42-52 pixels tall inside a 48x64 cell.\n- Avoid glossy modern mobile-game rendering, vector-flat art, anime exaggeration, chibi proportions, photorealism, antialiased airbrush softness, and inconsistent pixel density.\n- Prioritize animation consistency and exact sheet regularity over decorative detail.\n\nCOMPOSITION\n- Portrait canvas is preferred for the 3x4 grid.\n- Keep all artwork safely inside the canvas with no cropped hair, hands, boots, or satchel.\n- Transparent outside the twelve character silhouettes."
+    },
+    {
+      "id": "alpha_repair_01",
+      "timestamp_utc": "2026-09-02T13:36:00Z",
+      "tool_output_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-b3dc87f5-6339-47a8-a086-ae39c901a597.png",
+      "preserved_copy": "../assets/source/traveler_alpha_attempt_checkerboard.png",
+      "sha256": "779B93BE9A9C1DF2C0063D03AEC68B72AD22D84FB6E32D708B0804F81882EC2A",
+      "dimensions_px": [996, 1579],
+      "mode": "RGB",
+      "requested_true_alpha": true,
+      "actual_true_alpha": false,
+      "result": "failed targeted alpha repair; returned another flattened RGB checkerboard and changed canvas height by one pixel",
+      "prompt": "Edit this existing 3-column by 4-row traveler walk-cycle sprite sheet.\n\nONE REQUIRED CHANGE\n- Remove the visible light-gray and white checkerboard background completely and replace it with genuine alpha transparency (RGBA with alpha 0) everywhere outside the twelve character silhouettes, including all gaps between hair, arms, legs, boots, satchel, and clothing.\n- Preserve soft or partial edge alpha only where needed for the existing pixel-art silhouette; do not leave any checkerboard-colored halo.\n\nPRESERVE EXACTLY\n- Keep the same canvas dimensions and the exact 3x4 frame arrangement.\n- Keep all twelve traveler poses, identity, face, hair, teal vest, cream shirt, charcoal trousers, brown boots, tan satchel, pixel clusters, colors, scale, position, foot baselines, spacing, and margins unchanged.\n- Do not redraw, restyle, sharpen, smooth, recolor, reposition, resize, crop, add, or remove any part of any character.\n- Do not add grid lines, borders, labels, text, shadows, platforms, scenery, or any other visible background.\n\nOUTPUT\n- A single production-ready PNG with a true transparent background, not a simulated checkerboard."
+    }
+  ],
+  "selected_source_attempt": "traveler_generation_01",
+  "final_asset": {
+    "path": "../assets/traveler_walk_sheet.png",
+    "sha256": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+    "dimensions_px": [144, 256],
+    "mode": "RGBA",
+    "transformation": "deterministic border-connected checkerboard flood extraction, largest-component cleanup per cell, nearest-neighbor normalization to twelve 48x64 cells, common y=59 foot baseline",
+    "script": "../scripts/prepare_assets.py",
+    "creative_redraw_after_generation": false
+  }
+}

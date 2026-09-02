@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "scope": "one_local_foreground_overlap_only",
+  "source_scene": {
+    "path": "../assets/control_01.png",
+    "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+    "dimensions_px": [1672, 941]
+  },
+  "object": {
+    "id": "southwest_railing_planter",
+    "description": "foliage, flowers, planter, and attached iron railing pixels beside the accepted lower court",
+    "review_envelope_polygon": [[668, 645], [681, 638], [697, 640], [710, 648], [720, 661], [722, 676], [717, 691], [708, 703], [691, 706], [677, 697], [669, 684], [665, 663]],
+    "mask_path": "../assets/southwest_planter_mask.png",
+    "mask_sha256": "E57567DF8FD4B9C30AEB8D8452E5F28FD62053AB906330B9D2E04486B9AD5C91",
+    "foreground_path": "../assets/southwest_planter_foreground.png",
+    "foreground_sha256": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+    "alpha_bbox_px": [665, 652, 722, 707],
+    "nontransparent_pixel_count": 2072,
+    "source_rgb_mismatch_count": 0,
+    "alignment": "full-canvas identity transform at native image coordinates"
+  },
+  "render_contract": {
+    "background_z_index": 0,
+    "player_z_index": 10,
+    "foreground_z_index": 20,
+    "preregistered_player_footpoint": [704, 675],
+    "atlas_pose": {"row": 0, "column": 1, "semantic": "south-facing idle"},
+    "sprite_opaque_pixels": 989,
+    "overlap_pixels": 130,
+    "overlap_fraction": 0.131445904954499,
+    "anchor_inside_unchanged_walkable_polygon": true
+  },
+  "nonclaims": [
+    "automatic semantic extraction",
+    "general Y sorting",
+    "occlusion at arbitrary positions",
+    "foreground behavior for the fountain, roofs, facades, or other planters",
+    "expanded walkable geometry"
+  ]
+}

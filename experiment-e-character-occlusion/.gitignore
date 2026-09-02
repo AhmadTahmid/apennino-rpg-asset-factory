@@ -1,0 +1,13 @@
+# Local copies inherited while bootstrapping from Experiment D; canonical
+# evidence remains in ../experiment-d-art-first-node.
+assets/player.png
+diagnostics/invalidated_full_orbit_*
+
+# Regenerable console/import noise. Machine-readable reports and the focused
+# failed/successful render-capture logs remain versioned.
+diagnostics/prepare_assets_console.txt
+diagnostics/preflight_console.txt
+diagnostics/godot_import*.log
+diagnostics/godot_smoke.log
+diagnostics/godot_test*.log
+diagnostics/main_scene_smoke.log

@@ -1,0 +1,100 @@
+{
+  "experiment_id": "experiment_e_character_occlusion",
+  "status": "completed_passed_narrow_scope_with_visual_residuals",
+  "hypothesis": "The accepted Experiment D micro-node can gain a readable animated traveler and one credible foreground-depth interaction without changing its gameplay geometry.",
+  "source_video": {
+    "path": "../A_random_Appennino_Italian_tow.mp4",
+    "duration_seconds": 10.005,
+    "dimensions_px": [1280, 720],
+    "fps": 24,
+    "included_in_experiment": false
+  },
+  "scene_art": {
+    "path": "assets/control_01.png",
+    "lineage": "byte-identical Experiment C control_01 via Experiment D",
+    "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+    "dimensions_px": [1672, 941]
+  },
+  "traveler_art": {
+    "path": "assets/traveler_walk_sheet.png",
+    "sha256": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+    "dimensions_px": [144, 256],
+    "format": "RGBA",
+    "grid": [3, 4],
+    "cell_size_px": [48, 64],
+    "row_semantics": ["down", "left", "right", "up"],
+    "frame_order": [0, 1, 2, 1],
+    "idle_column": 1,
+    "animation_fps": 7,
+    "provenance": "data/art_generation_provenance.json",
+    "visual_audit": "distinct and directionally readable; slightly underscaled, flatter, and more strongly outlined than baked inhabitants"
+  },
+  "occluder": {
+    "id": "southwest_railing_planter",
+    "mask_path": "assets/southwest_planter_mask.png",
+    "mask_sha256": "E57567DF8FD4B9C30AEB8D8452E5F28FD62053AB906330B9D2E04486B9AD5C91",
+    "foreground_path": "assets/southwest_planter_foreground.png",
+    "foreground_sha256": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+    "source_equal_nontransparent_pixels": 2072,
+    "source_mismatch_nontransparent_pixels": 0,
+    "placement": "full-canvas identity transform, z=20 above player z=10",
+    "preregistered_player_footpoint": [704, 675],
+    "overlap_pixels": 130,
+    "overlap_fraction": 0.131445904954499,
+    "spec": "data/occlusion_spec.json"
+  },
+  "engine": {
+    "name": "Godot",
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "renderer": "GL Compatibility"
+  },
+  "geometry": {
+    "path": "data/node_001_geometry.json",
+    "sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+    "unchanged_from_experiment_d": true,
+    "scope": "lower west-south-east U-shaped fountain-court route only"
+  },
+  "success_conditions": [
+    "locked source, atlas, mask, foreground, and geometry hashes match",
+    "RGBA 3x4 atlas contains twelve nonempty distinct frames with transparent borders and common foot baselines",
+    "runtime maps down/left/right/up movement to preregistered rows",
+    "runtime advances a complete 0-1-2-1 sequence while moving and returns to idle column 1",
+    "foreground nontransparent RGB pixels are exact locked-source pixels and alpha matches the reviewed sparse mask",
+    "foreground uses identity transform and renders above the player",
+    "real-renderer capture hides all 130 declared overlap pixels and a reversed-order control reveals all 130",
+    "Experiment D collision probes, fountain block, lower-court outbound/return, and boundary block still pass",
+    "seven deliberate mutations fail only for their declared causes"
+  ],
+  "validation": {
+    "normal_suite": {
+      "passed": true,
+      "assertions_passed": 12,
+      "assertions_failed": 0,
+      "results": "diagnostics/test_results.json"
+    },
+    "real_renderer": {
+      "passed": true,
+      "results": "diagnostics/render_capture_verification.json",
+      "correct_capture": "diagnostics/runtime_occlusion_capture.png",
+      "wrong_order_capture": "diagnostics/runtime_occlusion_capture_player_above.png",
+      "baseline_capture": "diagnostics/runtime_occlusion_baseline.png"
+    },
+    "mutations": [
+      {"id": "freeze_animation", "detected": true, "required_failures": ["temporal_animation"]},
+      {"id": "swap_left_right_rows", "detected": true, "required_failures": ["direction_mapping"]},
+      {"id": "occluder_below_player", "detected": true, "required_failures": ["occlusion_state_contract"]},
+      {"id": "occluder_shift_x20", "detected": true, "required_failures": ["foreground_transform_contract", "occlusion_state_contract"]},
+      {"id": "full_rectangle_mask", "detected": true, "required_failures": ["foreground_asset_contract", "occlusion_state_contract"]},
+      {"id": "shift_fountain", "detected": true, "required_failures": ["collision_probe_contract", "fountain_blocking", "lower_court_outbound", "lower_court_return"]},
+      {"id": "corridor_blocker", "detected": true, "required_failures": ["collision_probe_contract", "lower_court_outbound", "lower_court_return"]}
+    ]
+  },
+  "nonclaims": [
+    "production-ready character integration",
+    "general Y sorting or automatic scene-depth extraction",
+    "occlusion outside the single southwest planter pose",
+    "expanded walkability, stairs, elevation, exits, roofs, facades, fountain depth, or NPC depth",
+    "automatic transparent sprite generation",
+    "whole-town playability or cross-node continuity"
+  ]
+}
