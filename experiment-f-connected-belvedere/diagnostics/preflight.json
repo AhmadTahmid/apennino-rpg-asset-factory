@@ -1,0 +1,80 @@
+{
+  "passed": true,
+  "failures": [],
+  "checked_assets": [
+    {
+      "path": "assets\\piazza.png",
+      "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets\\belvedere.png",
+      "sha256": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets\\source\\belvedere_generated_original.png",
+      "sha256": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets\\traveler_walk_sheet.png",
+      "sha256": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+      "dimensions": [
+        144,
+        256
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "path": "assets\\southwest_planter_foreground.png",
+      "sha256": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "piazza_geometry_sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+  "belvedere_geometry_sha256": "02E836B1068E9B398189EA79097B02F3D8EC82AD1022E7E882230C0B0D50BCC4",
+  "piazza_geometry_unchanged_from_experiment_e": true,
+  "belvedere_route_waypoint_count": 10,
+  "belvedere_arrival_to_portal_distance_px": 52.0,
+  "belvedere_portal_radius_px": 28.0,
+  "style_summary": {
+    "piazza": {
+      "mean_rgb": [
+        115.031,
+        107.556,
+        87.578
+      ],
+      "mean_saturation_0_255": 92.066,
+      "mean_luminance_0_255": 107.514,
+      "luminance_stddev": 50.322
+    },
+    "belvedere": {
+      "mean_rgb": [
+        106.773,
+        137.48,
+        121.878
+      ],
+      "mean_saturation_0_255": 96.222,
+      "mean_luminance_0_255": 126.516,
+      "luminance_stddev": 55.718
+    },
+    "interpretation": "descriptive continuity telemetry only; not treated as proof of stylistic equivalence"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "native_image_pixels_origin_top_left",
+  "image_size": [1672, 941],
+  "node_id": "belvedere",
+  "scope": "single_elevation_stone_overlook_terrace",
+  "authorship": "manual_visual_alignment_against_final_generated_art",
+  "player": {
+    "arrival_spawn": [836, 850],
+    "foot_collider_radius_px": 10,
+    "speed_px_per_second": 260
+  },
+  "walkable_boundary": [
+    [590, 695],
+    [1080, 695],
+    [1265, 775],
+    [1240, 825],
+    [1100, 875],
+    [1060, 920],
+    [610, 920],
+    [570, 875],
+    [430, 825],
+    [405, 775]
+  ],
+  "tested_route": {
+    "id": "belvedere_loop_and_return",
+    "waypoints": [
+      [836, 850],
+      [650, 820],
+      [560, 780],
+      [680, 735],
+      [836, 720],
+      [1000, 750],
+      [1120, 800],
+      [1020, 845],
+      [836, 850],
+      [836, 902]
+    ]
+  },
+  "portal": {
+    "id": "return_to_piazza",
+    "anchor": [836, 902],
+    "interaction_radius_px": 28,
+    "destination_node": "piazza",
+    "destination_spawn": [1070, 670]
+  },
+  "closed_for_this_experiment": [
+    {
+      "id": "parapet_and_valley",
+      "reason": "painted depth beyond the terrace is scenery, not traversable terrain"
+    },
+    {
+      "id": "church_roofs",
+      "reason": "distant architectural scenery"
+    },
+    {
+      "id": "foliage_edges",
+      "reason": "foreground border does not imply hidden paths"
+    }
+  ]
+}

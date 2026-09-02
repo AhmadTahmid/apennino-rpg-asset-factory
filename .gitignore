@@ -7,3 +7,5 @@ __pycache__/
 *.tmp
 *.import
 experiment-d-art-first-node/diagnostics/*.log
+experiment-e-character-occlusion/diagnostics/*.log
+experiment-f-connected-belvedere/diagnostics/*.log

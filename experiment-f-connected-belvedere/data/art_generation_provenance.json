@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "tool_mode": "built_in_image_gen",
+  "use_case": "stylized-concept",
+  "generated_at_local": "2026-09-02",
+  "output": {
+    "original_tool_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-c47a1d1f-77fb-4cfb-8bbd-3ec69bf1ad47.png",
+    "preserved_original": "assets/source/belvedere_generated_original.png",
+    "project_asset": "assets/belvedere.png",
+    "derivative_operations": "none; project asset is byte-identical to preserved original",
+    "dimensions_px": [1672, 941],
+    "sha256": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA"
+  },
+  "references": [
+    {
+      "path": "../reference_frames/frame_010.jpg",
+      "role": "source-video composition reference"
+    },
+    {
+      "path": "../experiment-e-character-occlusion/assets/control_01.png",
+      "role": "accepted palette, pixel treatment, architecture, and atmospheric-depth style reference"
+    }
+  ],
+  "prompt": "Use case: stylized-concept\nAsset type: fixed-background 2D RPG environment for a playable micro-node\nInput images: Image 1 is the source-video composition reference; Image 2 is the accepted piazza's palette, pixel treatment, architectural material, and mountain-depth style reference only.\nPrimary request: Recreate Image 1 as a clean, unoccupied Appennino hill-town belvedere that can serve as the next playable node after the piazza.\nScene/backdrop: layered green Apennine valley and distant mountains under a bright pale-blue sky; a small church and fields far below; terracotta village roofs and the bell tower visible beyond the right parapet.\nSubject: a compact stone-paved overlook terrace occupying the lower third, with a broad clear walkable surface from an entrance at bottom center to a viewpoint near center; low stone parapet along the left, front, and right edges; modest foliage only at the extreme lower corners.\nStyle/medium: polished hand-painted pixel-art RPG background matching Image 2's warm limestone, terracotta, restrained outlines, soft atmospheric depth, and readable cobblestone scale.\nComposition/framing: 16:9 landscape, fixed camera, same elevated RPG viewing language as Image 2; preserve Image 1's valley-view composition but remove its player and interface. Keep the terrace geometry visually simple and collision-readable. The bottom-center entrance must remain visibly open and unobstructed.\nLighting/mood: clear warm daylight, tranquil and inviting.\nConstraints: no people, no animals, no dialogue prompt, no HUD, no bars, no coins, no letters, no text, no icons, no watermark; no stairs; no market props; no foreground object crossing the bottom-center entrance; do not copy Image 2's piazza layout or fountain."
+}

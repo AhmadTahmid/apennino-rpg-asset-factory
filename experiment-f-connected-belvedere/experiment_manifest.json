@@ -1,0 +1,64 @@
+{
+  "experiment_id": "experiment_f_connected_belvedere",
+  "status": "completed_passed_first_cross_node_transfer",
+  "hypothesis": "The validated art-first workflow can transfer from the accepted piazza to one source-video-inspired second micro-node with explicit tested round-trip portal mapping.",
+  "source_video": {
+    "path": "../A_random_Appennino_Italian_tow.mp4",
+    "included_in_experiment": false,
+    "composition_reference": "../reference_frames/frame_010.jpg"
+  },
+  "nodes": [
+    {
+      "id": "piazza",
+      "art": "assets/piazza.png",
+      "geometry": "data/node_001_geometry.json",
+      "geometry_sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+      "unchanged_from_experiment_e": true
+    },
+    {
+      "id": "belvedere",
+      "art": "assets/belvedere.png",
+      "art_sha256": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA",
+      "geometry": "data/node_002_geometry.json",
+      "geometry_sha256": "02E836B1068E9B398189EA79097B02F3D8EC82AD1022E7E882230C0B0D50BCC4",
+      "generation_attempts": 1,
+      "post_generation_pixel_operations": 0,
+      "walkable_boundary_vertices": 10,
+      "tested_route_waypoints": 10
+    }
+  ],
+  "portal_mapping": {
+    "piazza_anchor": [1095, 655],
+    "belvedere_arrival": [836, 850],
+    "belvedere_return_anchor": [836, 902],
+    "piazza_return_spawn": [1070, 670],
+    "interaction_radius_px": 28
+  },
+  "validation": {
+    "normal_assertions_passed": 8,
+    "normal_assertions_failed": 0,
+    "mutations_detected": 4,
+    "real_renderer_passed": true,
+    "baseline_equals_locked_belvedere": true,
+    "traveler_changed_pixels": 895,
+    "results": "diagnostics/test_results.json",
+    "render_results": "diagnostics/render_capture_verification.json"
+  },
+  "scalability_conclusion": "The content and runtime contracts transferred once with no generated-art repair, but geometry authorship and visual review remain manual and one simple second node is insufficient for a production-scale claim.",
+  "visual_audit": {
+    "path": "diagnostics/visual_audit.md",
+    "environment": "pass",
+    "playable_floor_readability": "pass",
+    "cross_node_style_continuity": "partial_pass",
+    "traveler_scale": "partial_too_small",
+    "portal_physical_adjacency": "not_claimed"
+  },
+  "next_efficiency_rule": "Reuse the frozen harness for ordinary nodes; add new tests only for genuinely new capabilities; measure repair rate and manual geometry effort across two or three additional nodes before claiming scalability.",
+  "nonclaims": [
+    "automatic video-to-world compilation",
+    "inferred physical continuity between scenes",
+    "automatic frame selection, collision extraction, or portal placement",
+    "multi-elevation traversal, NPC interaction, or general scene depth",
+    "general first-attempt generation reliability"
+  ]
+}

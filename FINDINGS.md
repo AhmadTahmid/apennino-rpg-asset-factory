@@ -78,6 +78,33 @@ This validates one source-locked overlap, not generalized Y-sorting. The useful
 pattern is: sparse reviewed mask + exact source-pixel equality + preregistered
 overlap + real-render baseline + reversed-order mutation.
 
+### 8. The art-first contract transferred to a second node once
+
+Experiment F used a source-video overlook frame for composition and the
+accepted piazza only for visual language. One generation call returned a clean
+1672×941 belvedere with no post-generation pixel operations. The existing
+traveler/controller, final-art geometry schema, route checks, boundary checks,
+mutation pattern, and real-render proof transferred directly. Explicit portal
+anchors and spawn mappings made piazza → belvedere → piazza testable.
+
+This is useful evidence of repeatability, but not automatic scaling. The node
+was structurally easy, and frame selection, visual acceptance, a 10-vertex
+walkable boundary, and both portal anchors still required manual judgment.
+The inherited traveler also appears too small in the belvedere, showing that a
+fixed sprite size is not a sufficient cross-node character/world scale
+contract.
+
+### 9. Evidence cost can exceed content cost
+
+In Experiment F, generating and integrating the actual second node was simpler
+than constructing and rerunning research-grade validation around it. Continuing
+to create new bespoke harnesses for ordinary nodes would burn time and tokens
+without proportional learning. The efficiency rule is now to freeze the
+two-node harness, reuse it for ordinary content, and add new mutation families
+only when introducing a genuinely new capability. Measure generation attempts,
+cleanup operations, geometry effort, and test failures across several nodes
+before making a production-scale claim.
+
 ## Failure patterns worth reusing elsewhere
 
 ### Generator self-certification
@@ -150,7 +177,8 @@ and no-player baseline pixels.
 | Small playable vignette from final art | Manual geometry authored against final pixels | Validated for one node |
 | One foreground overlap in flattened art | Sparse exact-source layer + real-render mutation | Validated locally |
 | Automatic collision/occlusion extraction | Open question | Unvalidated |
-| Cross-node continuity | Open question | Unvalidated |
+| Explicit round-trip cross-node continuity | Authored portal/spawn mapping + route/boundary tests | Validated once on a simple second node |
+| Automatic portal placement or inferred physical continuity | Open question | Unvalidated |
 
 ## Recommended experimental order
 
@@ -168,14 +196,18 @@ and no-player baseline pixels.
    direction mapping, and temporal progression.
 9. For foreground claims, compare real rendered pixels against a baseline and a
    deliberately reversed z-order.
-10. Add one capability at a time: player art, occlusion, interaction,
-    elevation, then multiple nodes.
+10. Reuse the frozen two-node harness for ordinary nodes; record attempt count,
+    cleanup work, geometry effort, and failures instead of rebuilding the proof.
+11. Add new capability tests only for interaction, elevation, dynamic depth, or
+    other genuinely new semantics.
 
 ## Current macro status
 
-The project has reached a defensible minimum playable result with animated
-embodiment and one local depth interaction. It has not reached automatic
-video-to-map compilation, production-matched character integration, general
-scene depth, or multiple connected nodes. The most promising immediate path is
-to expand the validated art-first node incrementally while continuing a
-separate geometry-control research branch.
+The project has reached a defensible two-node playable result with animated
+embodiment, one local depth interaction, and explicit round-trip continuity. It
+has not reached automatic video-to-map compilation, production-matched
+character integration, automatic geometry/portal extraction, multi-elevation
+play, or general scene depth. The next useful question is no longer whether a
+second simple node is possible; it is whether two or three more nodes can be
+added with a falling repair rate and bounded manual geometry effort while the
+same validation template remains unchanged.

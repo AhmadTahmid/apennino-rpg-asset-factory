@@ -1,0 +1,382 @@
+{
+  "experiment": "experiment_f_connected_belvedere",
+  "failure_count": 0,
+  "godot_version": "4.7.2-stable (official)",
+  "mutation": "none",
+  "passed": true,
+  "results": [
+    {
+      "evidence": {
+        "actual_hashes": {
+          "atlas": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+          "belvedere_art": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA",
+          "belvedere_geometry": "02E836B1068E9B398189EA79097B02F3D8EC82AD1022E7E882230C0B0D50BCC4",
+          "foreground": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+          "piazza_art": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+          "piazza_geometry": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4"
+        },
+        "dimensions": {
+          "atlas": "(144, 256)",
+          "belvedere": "(1672, 941)",
+          "foreground": "(1672, 941)",
+          "piazza": "(1672, 941)"
+        },
+        "expected_hashes": {
+          "atlas": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+          "belvedere_art": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA",
+          "belvedere_geometry": "02E836B1068E9B398189EA79097B02F3D8EC82AD1022E7E882230C0B0D50BCC4",
+          "foreground": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+          "piazza_art": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+          "piazza_geometry": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4"
+        }
+      },
+      "status": "PASS",
+      "test": "asset_integrity"
+    },
+    {
+      "evidence": {
+        "fountain_movement": {
+          "collider_name": "FountainBasin",
+          "elapsed_seconds": 0.133333333333333,
+          "final_position": [
+            765.162780761719,
+            634.124328613281
+          ],
+          "outcome": "BLOCKED",
+          "slide_collision_count": 2,
+          "target": [
+            894.0,
+            612.0
+          ],
+          "target_error_px": 130.723052978516
+        },
+        "geometry_sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+        "state_passed": true
+      },
+      "status": "PASS",
+      "test": "node_001_regression"
+    },
+    {
+      "evidence": {
+        "declared_anchor": [
+          1095.0,
+          655.0
+        ],
+        "expected_anchor_active": true,
+        "far_rejected": true,
+        "mutation": "none"
+      },
+      "status": "PASS",
+      "test": "portal_gating"
+    },
+    {
+      "evidence": {
+        "destination_error_px": 2.95081925392151,
+        "legs": [
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.283333333333333,
+            "final_position": [
+              668.367004394531,
+              639.65380859375
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              669.0,
+              640.0
+            ],
+            "target_error_px": 0.721478939056396
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.433333333333333,
+            "final_position": [
+              760.097595214844,
+              705.069580078125
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              760.0,
+              705.0
+            ],
+            "target_error_px": 0.119859136641026
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.5,
+            "final_position": [
+              889.221313476563,
+              720.142578125
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              888.0,
+              720.0
+            ],
+            "target_error_px": 1.22960770130157
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.5,
+            "final_position": [
+              1017.70642089844,
+              700.353271484375
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              1020.0,
+              700.0
+            ],
+            "target_error_px": 2.3206262588501
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.333333333333333,
+            "final_position": [
+              1092.45495605469,
+              656.493347167969
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              1095.0,
+              655.0
+            ],
+            "target_error_px": 2.95081925392151
+          }
+        ]
+      },
+      "status": "PASS",
+      "test": "piazza_route_to_portal"
+    },
+    {
+      "evidence": {
+        "accepted": true,
+        "actual_spawn": [
+          836.0,
+          850.0
+        ],
+        "belvedere_visible": true,
+        "current_node": "belvedere",
+        "expected_spawn": [
+          836.0,
+          850.0
+        ],
+        "foreground_visible": false,
+        "piazza_visible": false
+      },
+      "status": "PASS",
+      "test": "transition_to_belvedere"
+    },
+    {
+      "evidence": {
+        "destination_error_px": 0.0215509422123432,
+        "legs": [
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.716666666666667,
+            "final_position": [
+              652.045349121094,
+              820.329895019531
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              650.0,
+              820.0
+            ],
+            "target_error_px": 2.07178282737732
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.383333333333333,
+            "final_position": [
+              560.757080078125,
+              780.331726074219
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              560.0,
+              780.0
+            ],
+            "target_error_px": 0.826566636562347
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.483333333333333,
+            "final_position": [
+              678.222106933594,
+              735.675903320313
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              680.0,
+              735.0
+            ],
+            "target_error_px": 1.90203809738159
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.6,
+            "final_position": [
+              833.456726074219,
+              720.252685546875
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              836.0,
+              720.0
+            ],
+            "target_error_px": 2.55579566955566
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.65,
+            "final_position": [
+              999.8232421875,
+              749.968444824219
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              1000.0,
+              750.0
+            ],
+            "target_error_px": 0.179552376270294
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.5,
+            "final_position": [
+              1119.837890625,
+              799.932495117188
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              1120.0,
+              800.0
+            ],
+            "target_error_px": 0.175602838397026
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.416666666666667,
+            "final_position": [
+              1021.09826660156,
+              844.504211425781
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              1020.0,
+              845.0
+            ],
+            "target_error_px": 1.20498788356781
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.716666666666667,
+            "final_position": [
+              834.84716796875,
+              850.034240722656
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              836.0,
+              850.0
+            ],
+            "target_error_px": 1.15334045886993
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.2,
+            "final_position": [
+              836.00048828125,
+              902.021545410156
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              836.0,
+              902.0
+            ],
+            "target_error_px": 0.0215509422123432
+          }
+        ]
+      },
+      "status": "PASS",
+      "test": "belvedere_route"
+    },
+    {
+      "evidence": {
+        "expected_collider": "BelvedereBoundary",
+        "movement": {
+          "collider_name": "BelvedereBoundary",
+          "elapsed_seconds": 0.0666666666666667,
+          "final_position": [
+            836.0,
+            707.000061035156
+          ],
+          "outcome": "BLOCKED",
+          "slide_collision_count": 1,
+          "target": [
+            836.0,
+            620.0
+          ],
+          "target_error_px": 87.0000610351563
+        }
+      },
+      "status": "PASS",
+      "test": "belvedere_boundary"
+    },
+    {
+      "evidence": {
+        "accepted": true,
+        "actual_spawn": [
+          1070.0,
+          670.0
+        ],
+        "current_node": "piazza",
+        "expected_spawn": [
+          1070.0,
+          670.0
+        ],
+        "last_transition": {
+          "from": "belvedere",
+          "physics_frame": 440,
+          "spawn": [
+            1070.0,
+            670.0
+          ],
+          "to": "piazza"
+        },
+        "log_after": 2,
+        "log_before": 1
+      },
+      "status": "PASS",
+      "test": "round_trip_return"
+    }
+  ],
+  "source_hashes": {
+    "atlas": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+    "belvedere_art": "812AF962D4D567F99B474D9CAC328FCF2E176A973226C3FC3694D08177A992BA",
+    "belvedere_geometry": "02E836B1068E9B398189EA79097B02F3D8EC82AD1022E7E882230C0B0D50BCC4",
+    "foreground": "7A59A290EA28117E6DF18EBDC26AF6B5D801BE120A50B7F7098BBECBE48C7895",
+    "main_scene": "F66E0228138F6695366FA4A9CF9737C772FBB36C96F08E438EACCAAF7F2092C9",
+    "piazza_art": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+    "piazza_geometry": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+    "player_script": "355FFD2071C133458493E3FE4EC8FD78A89CB424A077C5554618E7023E949389",
+    "test_script": "E1D77ABE8D10D8088ED863F8D3D464BD62658B8ECCCA23504E41E97704D24B7D",
+    "world_script": "33FD34371810B26256F2FF74B4E2DF06923C21DDA5DD5D0DC12AF1868551FC48"
+  },
+  "timestamp_utc": "2026-09-02 15:03:07"
+}
