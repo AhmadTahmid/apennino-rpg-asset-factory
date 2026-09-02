@@ -1,5 +1,23 @@
 [
   {
+    "id": "chatgpt_visual_review_pdf",
+    "description": "Full 24-page high-resolution evidence dossier compiled for ChatGPT and external multimodal AI review",
+    "repository_path": "review_bundle/CHATGPT_VISUAL_REVIEW.pdf",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW.pdf",
+    "type": "visual_review_pdf",
+    "category": "critical_review_dossier",
+    "experiment_stage": "multimodal_ai_dossier"
+  },
+  {
+    "id": "chatgpt_visual_review_lite_pdf",
+    "description": "Essential 10-page compact review dossier for fast inspection (<3 MB)",
+    "repository_path": "review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf",
+    "type": "visual_review_pdf",
+    "category": "critical_review_dossier",
+    "experiment_stage": "multimodal_ai_dossier"
+  },
+  {
     "id": "contact_sheet",
     "description": "Master comparison contact sheet displaying Reference, Raw AI, Style-Anchored AI, Scaffold, 2D Composite, Hybrid Scene, and 3D Blender Renders",
     "repository_path": "review_bundle/contact_sheet.jpg",
@@ -22,6 +40,38 @@
     "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/scaffolds_contact_sheet.png",
     "category": "critical_conditioning",
     "experiment_stage": "scaffold_evaluation"
+  },
+  {
+    "id": "native_composite_diagnostic",
+    "description": "Native 2D composite with overlay marking canonical ground anchors, 202px door heights, elevation zones, and layer depth order",
+    "repository_path": "review_bundle/native_composite_diagnostic.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/native_composite_diagnostic.png",
+    "category": "diagnostic",
+    "experiment_stage": "composite_analysis"
+  },
+  {
+    "id": "scale_diagnostic",
+    "description": "Metric scale diagnostic placing normalized assets on a common baseline with a canonical 1.75m human reference at 96 PPM",
+    "repository_path": "review_bundle/scale_diagnostic.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/scale_diagnostic.png",
+    "category": "diagnostic",
+    "experiment_stage": "scale_analysis"
+  },
+  {
+    "id": "shadow_diagnostic",
+    "description": "Shadow consistency diagnostic evaluating cast shadow azimuth, softness, and length across independently generated sprites",
+    "repository_path": "review_bundle/shadow_diagnostic.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/shadow_diagnostic.png",
+    "category": "diagnostic",
+    "experiment_stage": "shadow_analysis"
+  },
+  {
+    "id": "perspective_diagnostic",
+    "description": "Perspective alignment diagnostic comparing drawn ground axes against the canonical 2:1 dimetric grid (26.565 deg)",
+    "repository_path": "review_bundle/perspective_diagnostic.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/perspective_diagnostic.png",
+    "category": "diagnostic",
+    "experiment_stage": "perspective_analysis"
   },
   {
     "id": "reference_target",

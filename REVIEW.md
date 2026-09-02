@@ -4,6 +4,20 @@ This document provides a self-contained, reviewable record of the **Appennino RP
 
 ---
 
+## 📄 Multimodal AI Visual Review (PDF Dossiers)
+
+For multimodal AI systems (such as ChatGPT) that cannot directly parse raw image binaries through the GitHub API, download and inspect the complete multi-page PDF visual review dossiers:
+
+- 📑 **[CHATGPT_VISUAL_REVIEW.pdf](review_bundle/CHATGPT_VISUAL_REVIEW.pdf)**  
+  *(Full 24-page high-resolution evidence dossier: Reference, Baselines, Scaffolds, Composites, 3D Renders, Asset Audits, and Diagnostics — 6.77 MB)*
+  - **Direct Raw Download**: [https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW.pdf](https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW.pdf)
+
+- 📑 **[CHATGPT_VISUAL_REVIEW_LITE.pdf](review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf)**  
+  *(Essential 10-page compact summary dossier — 2.34 MB)*
+  - **Direct Raw Download**: [https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf](https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/CHATGPT_VISUAL_REVIEW_LITE.pdf)
+
+---
+
 ## Quick Navigation
 
 - [Master Comparative Contact Sheet](#master-comparative-contact-sheet)
