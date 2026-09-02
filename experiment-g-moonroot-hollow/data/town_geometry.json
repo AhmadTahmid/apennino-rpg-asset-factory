@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "native_image_pixels_origin_top_left",
+  "image_size": [1672, 941],
+  "town_id": "moonroot_hollow",
+  "authorship": "manual_alignment_against_first_locked_generated_output",
+  "player": {
+    "spawn": [836, 860],
+    "foot_collider_radius_px": 14,
+    "speed_px_per_second": 280,
+    "sprite_scale": [2, 2]
+  },
+  "walkable_boundary": [
+    [310, 440],
+    [1360, 440],
+    [1510, 585],
+    [1520, 700],
+    [1380, 850],
+    [1180, 920],
+    [520, 920],
+    [300, 870],
+    [150, 700],
+    [160, 560]
+  ],
+  "obstacles": [
+    {
+      "id": "moonwell",
+      "node_name": "MoonwellBasin",
+      "shape": "ellipse",
+      "center": [842, 545],
+      "radii": [115, 82],
+      "segments": 32
+    }
+  ],
+  "quest_landmarks": {
+    "apothecary": {
+      "visual_anchor": [365, 510],
+      "interaction_anchor": [400, 590],
+      "interaction_radius_px": 70
+    },
+    "moonwell": {
+      "visual_anchor": [842, 545],
+      "interaction_anchor": [842, 650],
+      "interaction_radius_px": 55
+    },
+    "gatekeeper": {
+      "visual_anchor": [1390, 520],
+      "interaction_anchor": [1380, 620],
+      "interaction_radius_px": 75
+    }
+  },
+  "tested_quest_route": {
+    "spawn_to_apothecary": [[650, 800], [480, 700], [400, 590]],
+    "apothecary_to_moonwell": [[560, 650], [700, 680], [842, 650]],
+    "moonwell_to_gatekeeper": [[1040, 700], [1230, 680], [1380, 620]]
+  }
+}

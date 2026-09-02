@@ -22,6 +22,11 @@ generation provenance, reproduction commands, machine-readable round-trip
 tests, four deliberate failure mutations, real-render evidence, and the honest
 scalability assessment.
 
+The separate [Moonroot Hollow experiment](experiment-g-moonroot-hollow/README.md)
+tests transfer to a new fantastical RPG with full creative freedom. One
+generated raster town now supports a complete talk → collect → deliver quest
+with no SVG or procedural primitive artwork.
+
 ## Experiment timeline
 
 | Stage | Question | Honest result |
@@ -33,6 +38,7 @@ scalability assessment.
 | [Experiment D](experiment-d-art-first-node/RESULTS.md) | Can final generated art become a small playable node if new geometry is authored against it? | **Pass in a narrow scope.** Six real assertions pass; two deliberate corruptions are rejected. |
 | [Experiment E](experiment-e-character-occlusion/RESULTS.md) | Can the same node gain animated embodiment and one honest depth interaction? | **Local causal pass, visual-integration partial.** Twelve runtime checks, seven mutations, and real-render pixel comparison pass; the traveler remains slightly underscaled/flatter than baked figures. |
 | [Experiment F](experiment-f-connected-belvedere/RESULTS.md) | Can the art-first workflow transfer to a connected second video-inspired node? | **First transfer pass, automation unproven.** One-call belvedere art, round-trip portals, eight checks, four mutations, and real-render verification pass; geometry and visual review remain manual. |
+| [Moonroot Hollow / Experiment G](experiment-g-moonroot-hollow/RESULTS.md) | Do the findings transfer to a new fantastical RPG optimized for completeness and time? | **Lean complete pass.** One generation, zero pixel repairs, one screen, a complete three-stage quest, seven checks, four mutations, and raster-only verification. Godot remains the lowest-resistance runtime. |
 
 ## Reproduce the playable slice
 
@@ -68,6 +74,7 @@ experiment-c-neural-repaint/   Controlled OpenAI whole-scene comparison
 experiment-d-art-first-node/   First honest Godot playable micro-node
 experiment-e-character-occlusion/ Animated traveler + one tested depth layer
 experiment-f-connected-belvedere/ Connected piazza ↔ belvedere transfer test
+experiment-g-moonroot-hollow/   From-scratch fantastical town + complete quest
 whole-scene-experiment/        Preserved invalid Experiment B evidence
 appennino-2d-asset-factory/    Independent 2D asset experiments
 output/                        Procedural Blender outputs

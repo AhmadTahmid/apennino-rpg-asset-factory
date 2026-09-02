@@ -1,0 +1,48 @@
+{
+  "experiment_id": "experiment_g_moonroot_hollow",
+  "status": "completed_passed_lean_complete_quest",
+  "objective": "Test whether the Appennino findings transfer to a new fantastical 2D RPG optimized for completeness and creation time with no SVG or mathematically generated primitive artwork.",
+  "town_art": {
+    "path": "assets/moonroot_hollow.png",
+    "preserved_original": "assets/source/moonroot_hollow_generated_original.png",
+    "sha256": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+    "dimensions_px": [1672, 941],
+    "generation_attempts": 1,
+    "post_generation_pixel_operations": 0,
+    "external_image_references": 0,
+    "provenance": "data/art_generation_provenance.json"
+  },
+  "player_art": {
+    "path": "assets/traveler_walk_sheet.png",
+    "lineage": "reused generated Experiment E traveler",
+    "runtime_scale": [2, 2]
+  },
+  "visible_art_policy": {
+    "svg_count": 0,
+    "procedural_visible_draw_calls": 0,
+    "visible_illustration_formats": ["PNG"],
+    "collision_geometry_visible": false
+  },
+  "gameplay": {
+    "town_screens": 1,
+    "quest_stages": ["speak_to_apothecary", "collect_moonwater", "deliver_to_gatekeeper", "complete"],
+    "blocking_landmarks": 1,
+    "walkable_boundary_vertices": 10,
+    "tested_route_waypoints": 9
+  },
+  "validation": {
+    "normal_assertions_passed": 7,
+    "normal_assertions_failed": 0,
+    "mutations_detected": 4,
+    "real_renderer_passed": true,
+    "baseline_equals_locked_town_art": true,
+    "traveler_changed_pixels": 3956
+  },
+  "conclusion": "Creative freedom and gameplay-first prompting removed most of the Appennino reconstruction cost. Godot remains the lowest-resistance runtime; AI-native generation, manifests, vision review, and orchestration should sit above it.",
+  "nonclaims": [
+    "production scalability",
+    "automatic collision or interaction extraction",
+    "animated NPCs",
+    "inventory, combat, save, audio, interiors, or packaged export"
+  ]
+}

@@ -9,3 +9,4 @@ __pycache__/
 experiment-d-art-first-node/diagnostics/*.log
 experiment-e-character-occlusion/diagnostics/*.log
 experiment-f-connected-belvedere/diagnostics/*.log
+experiment-g-moonroot-hollow/diagnostics/*.log

@@ -105,6 +105,32 @@ only when introducing a genuinely new capability. Measure generation attempts,
 cleanup operations, geometry effort, and test failures across several nodes
 before making a production-scale claim.
 
+### 10. The setting was not the main bottleneck
+
+Moonroot Hollow removes reference fidelity and gives the generator explicit
+gameplay topology: one elevation, a broad clearing, one central obstacle, two
+edge NPCs, and an open spawn. The first generated output required zero pixel
+repair and supported a complete talk → collect → deliver quest. This indicates
+that the Appennino cost came primarily from constrained reconstruction,
+flattened semantics, multi-level ambiguity, and research proof—not from Italian
+stone architecture itself.
+
+The transferable prompt lesson is to specify gameplay topology before scene
+generation whenever creative freedom permits.
+
+### 11. Godot is the runtime layer, not the AI-native layer
+
+Godot remained cheap once art and semantics were clear: movement, collision,
+interaction state, UI text, real rendering, and headless tests reused directly.
+Switching engines would not solve semantic image decomposition or geometry
+alignment. AI-native value belongs above the engine in raster generation,
+declarative manifests, provenance, vision-assisted anchors, scale calibration,
+playthrough generation, mutations, and render review.
+
+The next efficiency target is a small manifest-to-Godot scene compiler, with a
+browser runtime considered later as a second target rather than a replacement
+for the orchestration layer.
+
 ## Failure patterns worth reusing elsewhere
 
 ### Generator self-certification
@@ -179,6 +205,8 @@ and no-player baseline pixels.
 | Automatic collision/occlusion extraction | Open question | Unvalidated |
 | Explicit round-trip cross-node continuity | Authored portal/spawn mapping + route/boundary tests | Validated once on a simple second node |
 | Automatic portal placement or inferred physical continuity | Open question | Unvalidated |
+| Lean new RPG town with complete linear quest | Gameplay-first raster generation + reused Godot runtime | Validated once |
+| Raster-only visible art policy | PNG asset scan + scene/script primitive scan + real render | Validated in Moonroot Hollow |
 
 ## Recommended experimental order
 

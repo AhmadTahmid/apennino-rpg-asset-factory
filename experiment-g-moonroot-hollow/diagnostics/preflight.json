@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "failures": [],
+  "assets": [
+    {
+      "path": "assets\\moonroot_hollow.png",
+      "sha256": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets\\source\\moonroot_hollow_generated_original.png",
+      "sha256": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "assets\\traveler_walk_sheet.png",
+      "sha256": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+      "dimensions": [
+        144,
+        256
+      ],
+      "mode": "RGBA"
+    }
+  ],
+  "geometry_sha256": "E0A63D3F32BA02AD0E7FA8B1910913BD343260828DA0D5A634E69F74E9C11A98",
+  "expected_geometry_sha256": "E0A63D3F32BA02AD0E7FA8B1910913BD343260828DA0D5A634E69F74E9C11A98",
+  "checked_gameplay_points": 13,
+  "outside_gameplay_points": [],
+  "moonwell_interaction_normalized_distance": 1.2804878048780488,
+  "visible_art_policy": {
+    "svg_file_count": 0,
+    "non_raster_visible_asset_count": 0,
+    "banned_visible_node_types": [],
+    "procedural_draw_calls": [],
+    "passed": true
+  }
+}

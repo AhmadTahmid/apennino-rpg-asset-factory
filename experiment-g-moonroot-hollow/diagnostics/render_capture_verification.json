@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "baseline_equals_locked_town_art": true,
+  "baseline_difference_bbox": null,
+  "traveler_difference_bbox": [
+    808,
+    688,
+    864,
+    792
+  ],
+  "expected_traveler_envelope": [
+    788,
+    672,
+    885,
+    801
+  ],
+  "traveler_bbox_inside_expected_envelope": true,
+  "traveler_changed_pixel_count": 3956,
+  "changed_pixel_acceptance_range": [
+    2000,
+    5000
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "tool_mode": "built_in_image_gen",
+  "use_case": "stylized-concept",
+  "generated_at_local": "2026-09-02",
+  "output": {
+    "original_tool_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-edf8ed0b-c42f-4020-a958-34db0421b79f.png",
+    "preserved_original": "assets/source/moonroot_hollow_generated_original.png",
+    "project_asset": "assets/moonroot_hollow.png",
+    "derivative_operations": "none; project asset is byte-identical to preserved original",
+    "dimensions_px": [1672, 941],
+    "sha256": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674"
+  },
+  "prompt": "Use case: stylized-concept\nAsset type: fixed-background 2D RPG town map for a complete one-screen quest\nPrimary request: Create an original tiny fantastical town called Moonroot Hollow, designed from the start for fast, unambiguous playability.\nScene/backdrop: a cozy twilight settlement grown around an enormous silver-barked hollow tree; mushroom-roof cottages and crooked timber shops ring one broad village clearing; luminous blue plants, hanging amber lanterns, violet forest, and distant firefly haze.\nSubject and gameplay layout: the lower half is one large, continuous, clearly readable oval clearing of moss-edged cobblestone. Keep a wide unobstructed player spawn at bottom center and generous walking lanes around a small circular glowing moonwell at center. At the left edge of the clearing, include one clearly visible friendly mushroom apothecary NPC in a plum robe beside a tiny herb stall. At the right edge, include one clearly visible antlered gatekeeper NPC beside a luminous root arch. Keep both NPCs on the edge of, not inside, the walking lanes. The moonwell, apothecary, and gatekeeper must be visually distinct quest landmarks.\nStyle/medium: polished hand-painted pixel-art RPG background, charming 16-bit-inspired detail with consistent pixel scale, readable silhouettes, restrained outlines, and no photorealism.\nComposition/framing: exact 16:9 landscape fixed camera, elevated three-quarter RPG view. Put buildings and giant tree in the upper half; reserve the lower half for simple gameplay. One elevation only. No hidden paths, stairs, bridges, cliffs, roofs crossing the clearing, or deep perspective ambiguities.\nLighting/mood: luminous blue-violet twilight with warm lantern accents; magical, safe, inviting, and high enough contrast for a small player sprite.\nConstraints: raster artwork only; no main player character; exactly the two described NPCs; no extra people or creatures; no HUD, dialogue box, title, labels, letters, numbers, text, icons, arrows, borders, watermark, or logo; no fountain other than the small central moonwell; no foreground foliage covering the lower-center spawn or walking lanes."
+}

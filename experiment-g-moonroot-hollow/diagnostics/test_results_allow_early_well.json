@@ -1,0 +1,304 @@
+{
+  "experiment": "experiment_g_moonroot_hollow",
+  "failure_count": 1,
+  "godot_version": "4.7.2-stable (official)",
+  "mutation": "allow_early_well",
+  "passed": false,
+  "results": [
+    {
+      "evidence": {
+        "actual_hashes": {
+          "geometry": "E0A63D3F32BA02AD0E7FA8B1910913BD343260828DA0D5A634E69F74E9C11A98",
+          "town": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+          "traveler": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876"
+        },
+        "expected_hashes": {
+          "geometry": "E0A63D3F32BA02AD0E7FA8B1910913BD343260828DA0D5A634E69F74E9C11A98",
+          "town": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+          "traveler": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876"
+        },
+        "town_size": "(1672, 941)",
+        "traveler_size": "(144, 256)"
+      },
+      "status": "PASS",
+      "test": "asset_integrity"
+    },
+    {
+      "evidence": {
+        "banned_visible_node_violations": [],
+        "declared_policy": "all visible illustration is raster PNG; collision geometry is invisible",
+        "runtime_sprite_texture_paths": [
+          "res://assets/moonroot_hollow.png",
+          "res://assets/traveler_walk_sheet.png"
+        ]
+      },
+      "status": "PASS",
+      "test": "visible_art_policy"
+    },
+    {
+      "evidence": {
+        "quest_state": "find_apothecary",
+        "spawn": [
+          836.0,
+          860.0
+        ],
+        "sprite_position": [
+          0.0,
+          -64.0
+        ],
+        "sprite_scale": [
+          2.0,
+          2.0
+        ]
+      },
+      "status": "PASS",
+      "test": "runtime_contract"
+    },
+    {
+      "evidence": {
+        "accepted_before_apothecary": true,
+        "expected_state": "find_apothecary",
+        "quest_state_after_attempt": "deliver_moonwater"
+      },
+      "status": "FAIL",
+      "test": "quest_order_contract"
+    },
+    {
+      "evidence": {
+        "final_state": "complete",
+        "quest_text": "Quest complete: Moonroot Hollow shines again.",
+        "routes": [
+          {
+            "legs": [
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.700000000000001,
+                "final_position": [
+                  649.465759277344,
+                  799.827697753906
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  650.0,
+                  800.0
+                ],
+                "target_error_px": 0.561338782310486
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.700000000000001,
+                "final_position": [
+                  480.588836669922,
+                  700.346862792969
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  480.0,
+                  700.0
+                ],
+                "target_error_px": 0.683405041694641
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.483333333333333,
+                "final_position": [
+                  400.771942138672,
+                  591.057006835938
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  400.0,
+                  590.0
+                ],
+                "target_error_px": 1.3088766336441
+              }
+            ],
+            "route": "spawn_to_apothecary"
+          },
+          {
+            "legs": [
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.6,
+                "final_position": [
+                  558.3232421875,
+                  649.379272460938
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  560.0,
+                  650.0
+                ],
+                "target_error_px": 1.78796517848969
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.516666666666667,
+                "final_position": [
+                  699.724792480469,
+                  679.940490722656
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  700.0,
+                  680.0
+                ],
+                "target_error_px": 0.281567990779877
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.516666666666667,
+                "final_position": [
+                  841.290954589844,
+                  650.149230957031
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  842.0,
+                  650.0
+                ],
+                "target_error_px": 0.724579393863678
+              }
+            ],
+            "route": "apothecary_to_moonwell"
+          },
+          {
+            "legs": [
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.733333333333334,
+                "final_position": [
+                  1040.45361328125,
+                  700.113830566406
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  1040.0,
+                  700.0
+                ],
+                "target_error_px": 0.467677682638168
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.683333333333334,
+                "final_position": [
+                  1230.71923828125,
+                  679.923706054688
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  1230.0,
+                  680.0
+                ],
+                "target_error_px": 0.723273456096649
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.566666666666667,
+                "final_position": [
+                  1377.966796875,
+                  620.816162109375
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  1380.0,
+                  620.0
+                ],
+                "target_error_px": 2.19089841842651
+              }
+            ],
+            "route": "moonwell_to_gatekeeper"
+          }
+        ],
+        "stages": [
+          {
+            "accepted": true,
+            "actual_state": "seek_moonwater",
+            "expected_state": "seek_moonwater",
+            "landmark": "apothecary",
+            "last_interaction": "apothecary"
+          },
+          {
+            "accepted": true,
+            "actual_state": "deliver_moonwater",
+            "expected_state": "deliver_moonwater",
+            "landmark": "moonwell",
+            "last_interaction": "moonwell"
+          },
+          {
+            "accepted": true,
+            "actual_state": "complete",
+            "expected_state": "complete",
+            "landmark": "gatekeeper",
+            "last_interaction": "gatekeeper"
+          }
+        ]
+      },
+      "status": "PASS",
+      "test": "complete_quest_loop"
+    },
+    {
+      "evidence": {
+        "expected_collider": "MoonwellBasin",
+        "movement": {
+          "collider_name": "MoonwellBasin",
+          "elapsed_seconds": 0.2,
+          "final_position": [
+            842.0,
+            645.002380371094
+          ],
+          "outcome": "BLOCKED",
+          "slide_collision_count": 1,
+          "target": [
+            842.0,
+            545.0
+          ],
+          "target_error_px": 100.002380371094
+        }
+      },
+      "status": "PASS",
+      "test": "well_collision"
+    },
+    {
+      "evidence": {
+        "expected_collider": "TownBoundary",
+        "movement": {
+          "collider_name": "TownBoundary",
+          "elapsed_seconds": 0.183333333333333,
+          "final_position": [
+            836.0,
+            909.984558105469
+          ],
+          "outcome": "BLOCKED",
+          "slide_collision_count": 1,
+          "target": [
+            836.0,
+            980.0
+          ],
+          "target_error_px": 70.0154418945313
+        }
+      },
+      "status": "PASS",
+      "test": "outer_boundary"
+    }
+  ],
+  "source_hashes": {
+    "geometry": "E0A63D3F32BA02AD0E7FA8B1910913BD343260828DA0D5A634E69F74E9C11A98",
+    "main_scene": "C9971F02318CFB9BA1C0B6254B7029B7920AA2E3401E2C8A9B75E6CA03871AE0",
+    "player_script": "355FFD2071C133458493E3FE4EC8FD78A89CB424A077C5554618E7023E949389",
+    "test_script": "3BAF17B7D9DC3A95E2C48C25A6A55F97D1C018541209A4B488E813E2AB91ECC7",
+    "town": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+    "traveler": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+    "world_script": "1557621C7874C27143F82B978057DFFC03E051EF345E9A56EB8090E6E3CE0A5B"
+  },
+  "timestamp_utc": "2026-09-02 15:32:55"
+}
