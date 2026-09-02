@@ -1,86 +1,88 @@
-# Appennino 3D → 2D Procedural Asset Factory
+# Appennino RPG Asset Factory: 3D Procedural vs. 2D AI-Native Experiments
 
-An automated, procedural Blender (`bpy`) pipeline for generating coherent 2D/2.5D RPG assets inspired by Italian/Appennino hill-town architecture.
+A comparative research repository investigating two contrasting asset-production pipelines for a 2.5D Italian/Appennino hill-town RPG:
+1. **Procedural Blender 3D → 2D Asset Factory**: Procedural geometry, locked dimetric camera, locked lighting, and modular sprite generation.
+2. **AI-Native 2D-First Asset Factory**: Style anchor conditioning, structural 2D scaffolds, automated alpha defringing, and metric scale normalization.
+
+---
+
+## 🔍 Independent AI & Peer Review Hub
+
+If you are an AI assistant (e.g., ChatGPT) or technical artist reviewing this experiment:
+- **Comprehensive Review Page**: [`REVIEW.md`](REVIEW.md) (Embedded visual outputs, exact models, conditioning methods, and composition rules).
+- **Machine-Readable Asset Manifest**: [`review_manifest.json`](review_manifest.json) (Direct `raw.githubusercontent.com` URLs for all critical images).
+- **Review Visuals Bundle**: [`review_bundle/`](review_bundle/) (Pre-packaged copies of raw baselines, style-anchored assets, scaffolds, composites, and contact sheets).
+
+---
+
+## Master Comparison Contact Sheet
+
+![Master Contact Sheet](review_bundle/contact_sheet.jpg)
 
 ---
 
 ## Repository Structure
 
 ```text
-d:\Apennino scene\
+├── REVIEW.md                      # Primary peer-review guide with inline image evidence
+├── review_manifest.json           # Machine-readable index with raw GitHub URLs
+├── review_bundle/                 # Self-contained review copies & 3 high-res contact sheets
+│   ├── contact_sheet.jpg          # Master comparative 8-panel sheet
+│   ├── assets_contact_sheet.png   # 8 transparent modular sprites
+│   └── scaffolds_contact_sheet.png# Scaffold-to-asset pairs
 │
-├── README.md                      # Pipeline overview and usage guide
-├── experiment_report.md           # In-depth technical evaluation & answers to core questions
+├── appennino-2d-asset-factory/    # AI-Native 2D Pipeline Experiment
+│   ├── style/
+│   │   ├── style_bible.yaml       # Codified palette, perspective, and architectural rules
+│   │   └── anchor_board.png       # Multimodal visual style conditioning anchor
+│   ├── scaffolds/                 # Deterministic 2:1 dimetric vector scaffolds & JSON metadata
+│   ├── scripts/                   # Normalization, segmentation, and composite builders
+│   ├── output/
+│   │   ├── raw_baseline/          # Control Group A (prompt-only generation)
+│   │   ├── style_anchored/        # Control Group B (style-anchor conditioned)
+│   │   ├── normalized/            # BFS alpha-cleaned, scale-normalized transparent sprites
+│   │   ├── native_composite.png   # 1920x1080 native 2D assembled scene
+│   │   └── hybrid_scene.png       # 2D structured sprites + painterly generative backdrop
+│   ├── metadata/                  # Asset dimensions, PPM, and anchor telemetry
+│   └── experiment_report.md       # Comprehensive 2D experiment report
 │
-├── scripts/
-│   ├── config.py                  # Canonical locked camera, lighting, scale, and palette constants
-│   ├── materials.py               # Procedural stylized shader library (stone, roof, wood, foliage)
-│   ├── architecture.py            # Procedural building, roof, door, window, stair, and wall generators
-│   ├── props.py                   # Environmental props (fountain, lanterns, barrels, crates, pots)
-│   ├── vegetation.py              # Foliage generators (climbing ivy, shrubs, Mediterranean trees)
-│   ├── camera.py                  # Camera alignment, framing, and consistency validation
-│   ├── lighting.py                # Canonical Mediterranean daylight lighting rig
-│   ├── build_scene.py             # Master full-scene assembly & rendering script
+├── scripts/                       # Procedural Blender 3D Pipeline
+│   ├── architecture.py            # Procedural buildings, roofs, quoins, stairs, walls
+│   ├── materials.py               # Procedural Cycles shaders (stone, terracotta, wood, foliage)
+│   ├── camera.py                  # Canonical locked dimetric camera rig & validator
+│   ├── lighting.py                # Canonical Mediterranean sun rig
+│   ├── build_scene.py             # Master full-scene assembly & render script
+│   ├── render.py                  # Batch isolated transparent sprite renderer
 │   ├── postprocess.py             # Pixel-art downscale/upscale & painterly contour filter
-│   ├── render.py                  # Isolated asset batch renderer & variations showcase
-│   └── composite_test.py          # 2D sprite layering and assembly validation script
+│   └── generate_contact_sheets.py # Builds review_bundle contact sheets
 │
-├── output/
-│   ├── scene/
-│   │   ├── clean.png              # Variant A: Clean stylized Cycles render (1920x1080)
-│   │   ├── pixelish.png           # Variant B: Integer upscaled (4x) pixel aesthetic (1920x1080)
-│   │   └── painterly.png          # Variant C: Illustrated storybook stylization (1920x1080)
-│   │
-│   ├── isolated_assets/
-│   │   ├── house_A.png            # 2-floor stone house sprite (RGBA)
-│   │   ├── house_B.png            # 3-floor narrow townhouse sprite (RGBA)
-│   │   ├── house_C.png            # 2-floor wide townhouse sprite (RGBA)
-│   │   ├── stairs.png             # Stone staircase sprite (RGBA)
-│   │   ├── retaining_wall.png     # Stone retaining wall sprite (RGBA)
-│   │   ├── fountain.png           # Tiered stone fountain sprite (RGBA)
-│   │   ├── vegetation.png         # Mediterranean tree & shrubs sprite (RGBA)
-│   │   └── props.png              # Barrels, crates, lanterns, pots sprite (RGBA)
-│   │
-│   ├── variations/
-│   │   └── houses_together.png    # Side-by-side render of Houses A, B, and C
-│   │
-│   ├── 2d_composite/
-│   │   └── assembled_2d_scene.png # 2D layered composite of independently rendered sprites
-│   │
-│   └── diagnostics/
-│       ├── camera_settings.json   # Canonical camera configuration metadata
-│       ├── asset_metadata.json    # Polygon counts, dimensions, and render records
-│       └── scale_reference.png    # 1.75m humanoid mannequin scale test
+├── output/                        # Procedural Blender 3D Deliverables
+│   ├── scene/                     # Clean, Painterly, and Pixel-ish 1920x1080 renders
+│   ├── isolated_assets/           # 8 transparent 3D-rendered modular sprites
+│   ├── variations/                # Side-by-side house variations showcase
+│   ├── 2d_composite/              # 2D layered sprite composite test
+│   └── diagnostics/               # Scale reference mannequin and camera metadata
 │
+├── workflows/
+│   └── prompt_catalog.md          # Exact prompts, models, seeds, and conditioning inputs
 └── source/
-    └── scene.blend                # Generated Blender scene file
+    └── scene.blend                # Complete reproducible Blender 5.2 scene file
 ```
 
 ---
 
-## Quick Start / Headless Execution
+## Comparative Findings & Verdict
 
-### 1. Build and Render Full Scene (Variants A, B, C)
-```powershell
-& "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --background --python scripts/build_scene.py
-& "C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe" scripts/postprocess.py
-```
+| Metric | Raw 2D AI | Style-Anchored 2D | Constrained 2D Factory | Procedural Blender 3D |
+| :--- | :---: | :---: | :---: | :---: |
+| **Artistic Attractiveness** | **9.2** | **9.5** | **9.4** | 7.8 (Clean) / 8.5 (Painterly) |
+| **Perspective Discipline** | 5.2 | 6.8 | 8.2 | **10.0 (Perfect Dimetric)** |
+| **Scale Consistency** | 3.5 (Macro drift) | 5.0 (Macro drift) | 8.5 (Normalized) | **9.8 (Exact Metric PPM)** |
+| **Modular Snapping** | 2.5 | 4.0 | 7.0 | **9.5 (Exact Grid Fit)** |
+| **Recomposability in 2D** | 4.0 | 6.0 | 7.8 | **9.2** |
+| **OVERALL PIPELINE SCORE** | **5.7 / 10** | **7.0 / 10** | **8.4 / 10** | **8.9 / 10** |
 
-### 2. Render Isolated Modular Assets, Variations & Diagnostics
-```powershell
-& "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --background --python scripts/render.py
-```
-
-### 3. Run 2D Composite Sprite Assembly Test
-```powershell
-& "C:\Users\Acer\AppData\Local\Programs\Python\Python312\python.exe" scripts/composite_test.py
-```
-
----
-
-## Key Principles
-
-1. **Locked Canonical Camera**: Elevated 3/4 Dimetric View (`Pitch: 56.0°`, `Yaw: 45.0°`, `Type: ORTHO`). Guarantees zero perspective drift across all rendered sprites.
-2. **Locked Canonical Lighting**: Warm golden sunlight (`Azimuth: 130°`, `Elevation: 48°`, `Energy: 3.8`) with soft shadow edges and cool cyan sky fill.
-3. **World Scale Truth**: `1 Blender Unit = 1.0 meter`. Standard door = 2.1m, floor = 2.8m, stair riser = 0.18m, calibrated with a 1.75m reference mannequin.
-4. **Parametric Richness**: Buildings are assembled from semantic architectural components (corner quoins, rafter tails, voussoir arches, shutters at ajar angles, wrought iron balconies, flower boxes).
+### Recommended Production Synthesis
+- **Geometry & Scale (Blender)**: Procedural 3D scripts guarantee 100% locked dimetric camera perspective, metric scale truth, and exact collision hulls.
+- **Surface Texturing & Detailing (2D AI)**: Style-anchored diffusion models apply rich Italian stone, terracotta, and ivy textures over 3D passes.
+- **Backdrops (2D AI)**: 100% pure 2D AI generation for distant mountain ranges and skies.

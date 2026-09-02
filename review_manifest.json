@@ -1,0 +1,114 @@
+[
+  {
+    "id": "contact_sheet",
+    "description": "Master comparison contact sheet displaying Reference, Raw AI, Style-Anchored AI, Scaffold, 2D Composite, Hybrid Scene, and 3D Blender Renders",
+    "repository_path": "review_bundle/contact_sheet.jpg",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/contact_sheet.jpg",
+    "category": "critical_overview",
+    "experiment_stage": "overall_comparison"
+  },
+  {
+    "id": "assets_contact_sheet",
+    "description": "Modular transparent asset grid showing all 8 normalized sprites (House A, B, C, stairs, retaining wall, fountain, vegetation, props)",
+    "repository_path": "review_bundle/assets_contact_sheet.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/assets_contact_sheet.png",
+    "category": "critical_assets",
+    "experiment_stage": "modular_assets"
+  },
+  {
+    "id": "scaffolds_contact_sheet",
+    "description": "Side-by-side comparison of input structural scaffolds versus final generated sprites",
+    "repository_path": "review_bundle/scaffolds_contact_sheet.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/scaffolds_contact_sheet.png",
+    "category": "critical_conditioning",
+    "experiment_stage": "scaffold_evaluation"
+  },
+  {
+    "id": "reference_target",
+    "description": "Representative source frame from Appennino hill-town reference video",
+    "repository_path": "review_bundle/01_reference.jpg",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/01_reference.jpg",
+    "category": "reference",
+    "experiment_stage": "ground_truth"
+  },
+  {
+    "id": "raw_baseline_house_A",
+    "description": "Control Group A: House A generated with text-only prompt + video reference without structural scaffold",
+    "repository_path": "review_bundle/02_raw_baseline.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/02_raw_baseline.png",
+    "category": "baseline",
+    "experiment_stage": "control_group_a"
+  },
+  {
+    "id": "style_anchored_house_A",
+    "description": "Control Group B: House A generated conditioned on the Style Anchor Board",
+    "repository_path": "review_bundle/03_style_anchored.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/03_style_anchored.png",
+    "category": "style_conditioning",
+    "experiment_stage": "control_group_b"
+  },
+  {
+    "id": "structural_scaffold_house_A",
+    "description": "Deterministic 2:1 dimetric vector blueprint for House A specifying roof pitch, floor heights, and openings",
+    "repository_path": "review_bundle/04_constrained_scaffold.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/04_constrained_scaffold.png",
+    "category": "scaffold",
+    "experiment_stage": "spatial_constraint"
+  },
+  {
+    "id": "family_sheet_scaffold",
+    "description": "Multi-asset family sheet scaffold layout for simultaneous generation",
+    "repository_path": "review_bundle/05_family_sheet.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/05_family_sheet.png",
+    "category": "scaffold",
+    "experiment_stage": "family_sheet"
+  },
+  {
+    "id": "native_composite",
+    "description": "Native-scale composition of independently generated 2D assets using canonical anchor coordinates (Zero eyeballed scaling)",
+    "repository_path": "review_bundle/06_native_composite.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/06_native_composite.png",
+    "category": "critical_composite",
+    "experiment_stage": "native_composition"
+  },
+  {
+    "id": "hybrid_scene",
+    "description": "Native-scale 2D structured town assets layered over a generative painterly landscape backdrop",
+    "repository_path": "review_bundle/07_hybrid_scene.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/07_hybrid_scene.png",
+    "category": "critical_composite",
+    "experiment_stage": "hybrid_composition"
+  },
+  {
+    "id": "blender_3d_clean",
+    "description": "Procedural Blender 3D factory clean Cycles render under canonical camera and lighting",
+    "repository_path": "review_bundle/08_blender_clean.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/08_blender_clean.png",
+    "category": "3d_factory_comparison",
+    "experiment_stage": "blender_pipeline"
+  },
+  {
+    "id": "blender_3d_painterly",
+    "description": "Procedural Blender 3D factory painterly stylized render with ink contour line filtering",
+    "repository_path": "review_bundle/09_blender_painterly.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/09_blender_painterly.png",
+    "category": "3d_factory_comparison",
+    "experiment_stage": "blender_pipeline"
+  },
+  {
+    "id": "blender_3d_pixelish",
+    "description": "Procedural Blender 3D factory 4x integer downscaled/upscaled pixel aesthetic render",
+    "repository_path": "review_bundle/10_blender_pixelish.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/review_bundle/10_blender_pixelish.png",
+    "category": "3d_factory_comparison",
+    "experiment_stage": "blender_pipeline"
+  },
+  {
+    "id": "style_anchor_board",
+    "description": "Multi-element visual style conditioning anchor board with palette swatches and reference crops",
+    "repository_path": "appennino-2d-asset-factory/style/anchor_board.png",
+    "raw_url": "https://raw.githubusercontent.com/AhmadTahmid/apennino-rpg-asset-factory/main/appennino-2d-asset-factory/style/anchor_board.png",
+    "category": "style_conditioning",
+    "experiment_stage": "style_anchor"
+  }
+]
