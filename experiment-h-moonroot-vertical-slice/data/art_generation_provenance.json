@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "tool_mode": "built_in_image_gen",
+  "generated_at_local": "2026-09-02",
+  "policy": "Every environment output is preserved and used byte-identically; no crop, resize, repaint, filter, alpha, or other pixel operation.",
+  "style_references": [
+    "experiment-g-moonroot-hollow/assets/moonroot_hollow.png"
+  ],
+  "outputs": [
+    {
+      "location_id": "town",
+      "lineage": "reused locked Experiment G output",
+      "project_asset": "assets/moonroot_hollow.png",
+      "preserved_original": "assets/source/moonroot_hollow_generated_original.png",
+      "dimensions_px": [1672, 941],
+      "sha256": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+      "generation_calls_in_experiment_h": 0,
+      "derivative_operations": "none"
+    },
+    {
+      "location_id": "forest",
+      "original_tool_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-d3314beb-9a56-4853-b138-0a087af18f8e.png",
+      "project_asset": "assets/lumenwood_crossing.png",
+      "preserved_original": "assets/source/lumenwood_crossing_generated_original.png",
+      "dimensions_px": [1672, 941],
+      "pixel_format": "24-bit RGB",
+      "sha256": "1B79BBC4ABE4011860D867EA54A5F2183A1E028F57AD650AEA35DDB7D1D34FF8",
+      "generation_calls": 1,
+      "derivative_operations": "none; project asset is byte-identical to preserved original",
+      "prompt": "Use case: stylized-concept\nAsset type: finished 2D RPG game environment background, one fixed playable node\nInput images: Image 1 is a style, palette, camera, and world-continuity reference only; generate a new location rather than editing it.\nPrimary request: Lumenwood Crossing, an enchanted twilight forest immediately beyond Moonroot Hollow. A broad luminous root-and-moss trail enters at bottom center, opens into a generous oval clearing across the lower and middle image, then leads to a clearly readable ancient root arch at upper center that serves as the next exit. A single distinctive star-seed flower glows pale gold and violet beside the left-middle edge of the walkable clearing, visibly reachable as a quest landmark. Include one shallow circular moonwater basin near the right-middle edge as environmental continuity, without blocking the route.\nStyle/medium: match Image 1's richly hand-painted whimsical fantasy RPG illustration, soft storybook brushwork, tactile bark and moss, silver-blue moonlight, amber window-like firefly glows, violet accents.\nComposition/framing: exact 16:9 landscape; same fixed elevated three-quarter game camera as Image 1; one simple elevation; wide unobstructed walkable floor from bottom entry through the clearing to the upper root arch; strong readable silhouettes and navigational landmarks; background fills the whole canvas.\nLighting/mood: blue-violet dusk, inviting mystery, luminous spores and restrained warm accents.\nConstraints: no player character, no people, no creatures, no UI, no text, no labels, no logos, no watermark; no cliffs, stairs, bridges, or ambiguous overlapping elevations; do not place branches, foreground foliage, props, or effects across the central walk lane; keep all scene art baked into one opaque raster background suitable for direct use in a Godot Sprite2D; preserve the exact camera logic and visual language of Image 1 without copying its town composition."
+    },
+    {
+      "location_id": "sanctuary",
+      "original_tool_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-deca86f3-180c-46af-a49b-a649bfae4670.png",
+      "project_asset": "assets/heartroot_sanctuary.png",
+      "preserved_original": "assets/source/heartroot_sanctuary_generated_original.png",
+      "dimensions_px": [1672, 941],
+      "pixel_format": "24-bit RGB",
+      "sha256": "0234F095E91097B296051DBF73A702C5470F9138148597127B74C649E4A621C0",
+      "generation_calls": 1,
+      "derivative_operations": "none; project asset is byte-identical to preserved original",
+      "prompt": "Use case: stylized-concept\nAsset type: finished 2D RPG game environment background, one fixed playable final node\nInput images: Image 1 and Image 2 are style, palette, camera, and world-continuity references only; generate a new location rather than editing either image.\nPrimary request: Heartroot Sanctuary, a sacred chamber inside the colossal silver tree of Moonroot Hollow. A broad doorway and root-lined path enter at bottom center into a generous circular wooden-and-stone ritual floor. At upper center stands one unmistakable luminous heart-root altar: intertwined silver roots cradle an empty star-shaped socket, ready to receive the star-seed. Frame the chamber with immense living roots, small violet mushrooms, a few glassy moonwater channels, and restrained amber lanterns around the outer boundary.\nStyle/medium: match the references' richly hand-painted whimsical fantasy RPG illustration, soft storybook brushwork, tactile ancient wood and stone, silver-blue moonlight, warm amber accents, violet bioluminescence.\nComposition/framing: exact 16:9 landscape; same fixed elevated three-quarter game camera as the references; one simple elevation; symmetric, highly readable final-room layout; wide unobstructed walkable floor from bottom entrance to the upper-center altar; strong altar silhouette; background fills the whole canvas.\nLighting/mood: solemn but hopeful, deep blue-violet sanctuary with a concentrated silver-gold glow at the altar.\nConstraints: no player character, no people, no creatures, no UI, no text, no labels, no logos, no watermark; no cliffs, stairs, bridges, or ambiguous overlapping elevations; do not place roots, props, foreground effects, or channels across the central walk lane; keep all scene art baked into one opaque raster background suitable for direct use in a Godot Sprite2D; preserve the exact camera logic and visual language of the references without copying their compositions."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "experiment_id": "experiment_h_moonroot_vertical_slice",
+  "optimization_target": "maximum complete playable scope per generation/integration effort",
+  "counts": {
+    "new_environment_generation_calls": 2,
+    "usable_first_outputs": 2,
+    "environment_regeneration_calls": 0,
+    "post_generation_pixel_operations": 0,
+    "reused_locked_environment_plates": 1,
+    "reused_character_atlases": 1,
+    "playable_locations": 3,
+    "quest_interactions": 7,
+    "persistent_inventory_item_types": 2,
+    "normal_runtime_contracts": 12,
+    "deliberate_mutations": 6,
+    "real_renderer_captures": 6
+  },
+  "manual_work_that_remains": [
+    "visual inspection of generated plates",
+    "conservative walkable boundaries and landmark anchors",
+    "quest prose and state-transition authorship",
+    "final visual playtest"
+  ],
+  "work_avoided_by_manifest_runtime": [
+    "separate Godot scene per location",
+    "duplicated collision construction code",
+    "duplicated transition controller code",
+    "per-location player setup",
+    "post-generation image repair"
+  ],
+  "not_measured": [
+    "wall-clock benchmark",
+    "model token cost",
+    "human-equivalent labor estimate"
+  ]
+}

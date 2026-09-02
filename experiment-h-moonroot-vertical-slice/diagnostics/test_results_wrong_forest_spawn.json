@@ -1,0 +1,593 @@
+{
+  "assertions": 12,
+  "failed_test_names": [
+    "complete_vertical_slice",
+    "save_load_roundtrip",
+    "landmark_collisions",
+    "location_boundaries"
+  ],
+  "failures": 4,
+  "mutation": "wrong_forest_spawn",
+  "passed": false,
+  "results": [
+    {
+      "evidence": {
+        "actual_hashes": {
+          "res://assets/heartroot_sanctuary.png": "0234F095E91097B296051DBF73A702C5470F9138148597127B74C649E4A621C0",
+          "res://assets/lumenwood_crossing.png": "1B79BBC4ABE4011860D867EA54A5F2183A1E028F57AD650AEA35DDB7D1D34FF8",
+          "res://assets/moonroot_hollow.png": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+          "res://assets/traveler_walk_sheet.png": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876"
+        },
+        "dimensions": {
+          "res://assets/heartroot_sanctuary.png": [
+            1672,
+            941
+          ],
+          "res://assets/lumenwood_crossing.png": [
+            1672,
+            941
+          ],
+          "res://assets/moonroot_hollow.png": [
+            1672,
+            941
+          ],
+          "res://assets/traveler_walk_sheet.png": [
+            144,
+            256
+          ]
+        },
+        "expected_hashes": {
+          "res://assets/heartroot_sanctuary.png": "0234F095E91097B296051DBF73A702C5470F9138148597127B74C649E4A621C0",
+          "res://assets/lumenwood_crossing.png": "1B79BBC4ABE4011860D867EA54A5F2183A1E028F57AD650AEA35DDB7D1D34FF8",
+          "res://assets/moonroot_hollow.png": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+          "res://assets/traveler_walk_sheet.png": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876"
+        }
+      },
+      "name": "asset_integrity",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "policy": "visible illustration is raster PNG; engine text is UI; collision is invisible",
+        "runtime_textures": [
+          "res://assets/moonroot_hollow.png",
+          "res://assets/traveler_walk_sheet.png"
+        ],
+        "violations": []
+      },
+      "name": "visible_art_policy",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "failures": [],
+        "location_ids": [
+          "town",
+          "forest",
+          "sanctuary"
+        ]
+      },
+      "name": "manifest_contract",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "ending_visible": false,
+        "inventory": [],
+        "location": "town",
+        "player_position": [
+          836.0,
+          860.0
+        ],
+        "quest_state": "find_mora"
+      },
+      "name": "initial_state",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "accepted_without_star_seed": false,
+        "snapshot": {
+          "ending_visible": false,
+          "inventory": [],
+          "location": "forest",
+          "player_position": [
+            836.0,
+            330.0
+          ],
+          "quest_state": "gather_star_seed"
+        }
+      },
+      "name": "locked_portal_contract",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "final": {
+          "ending_visible": false,
+          "inventory": [],
+          "location": "forest",
+          "player_position": [
+            318.349914550781,
+            334.025604248047
+          ],
+          "quest_state": "gather_star_seed"
+        },
+        "interactions": [
+          {
+            "accepted": true,
+            "id": "apothecary",
+            "state": "seek_moonwater"
+          },
+          {
+            "accepted": true,
+            "id": "moonwell",
+            "state": "deliver_moonwater"
+          },
+          {
+            "accepted": true,
+            "id": "gatekeeper",
+            "state": "enter_lumenwood"
+          },
+          {
+            "accepted": true,
+            "id": "gatekeeper_transition",
+            "snapshot": {
+              "ending_visible": false,
+              "inventory": [],
+              "location": "forest",
+              "player_position": [
+                90.0,
+                90.0
+              ],
+              "quest_state": "gather_star_seed"
+            }
+          },
+          {
+            "accepted": false,
+            "id": "star_seed",
+            "snapshot": {
+              "ending_visible": false,
+              "inventory": [],
+              "location": "forest",
+              "player_position": [
+                315.184173583984,
+                334.944458007813
+              ],
+              "quest_state": "gather_star_seed"
+            }
+          },
+          {
+            "accepted": false,
+            "id": "root_arch",
+            "snapshot": {
+              "ending_visible": false,
+              "inventory": [],
+              "location": "forest",
+              "player_position": [
+                318.349914550781,
+                334.025604248047
+              ],
+              "quest_state": "gather_star_seed"
+            }
+          }
+        ],
+        "routes": [
+          {
+            "location": "town",
+            "movements": [
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.700000000000001,
+                "final_position": [
+                  649.465759277344,
+                  799.827697753906
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  650.0,
+                  800.0
+                ],
+                "target_error_px": 0.561338782310486
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.700000000000001,
+                "final_position": [
+                  480.588836669922,
+                  700.346862792969
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  480.0,
+                  700.0
+                ],
+                "target_error_px": 0.683405041694641
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.483333333333333,
+                "final_position": [
+                  400.771942138672,
+                  591.057006835938
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  400.0,
+                  590.0
+                ],
+                "target_error_px": 1.3088766336441
+              }
+            ],
+            "reached_all": true,
+            "route": "spawn_to_apothecary"
+          },
+          {
+            "location": "town",
+            "movements": [
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.6,
+                "final_position": [
+                  558.3232421875,
+                  649.379272460938
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  560.0,
+                  650.0
+                ],
+                "target_error_px": 1.78796517848969
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.516666666666667,
+                "final_position": [
+                  699.724792480469,
+                  679.940490722656
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  700.0,
+                  680.0
+                ],
+                "target_error_px": 0.281567990779877
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.516666666666667,
+                "final_position": [
+                  841.290954589844,
+                  650.149230957031
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  842.0,
+                  650.0
+                ],
+                "target_error_px": 0.724579393863678
+              }
+            ],
+            "reached_all": true,
+            "route": "apothecary_to_moonwell"
+          },
+          {
+            "location": "town",
+            "movements": [
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.733333333333334,
+                "final_position": [
+                  1040.45361328125,
+                  700.113830566406
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  1040.0,
+                  700.0
+                ],
+                "target_error_px": 0.467677682638168
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.683333333333334,
+                "final_position": [
+                  1230.71923828125,
+                  679.923706054688
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  1230.0,
+                  680.0
+                ],
+                "target_error_px": 0.723273456096649
+              },
+              {
+                "collider_name": "",
+                "elapsed_seconds": 0.566666666666667,
+                "final_position": [
+                  1377.966796875,
+                  620.816162109375
+                ],
+                "outcome": "REACHED",
+                "slide_collision_count": 0,
+                "target": [
+                  1380.0,
+                  620.0
+                ],
+                "target_error_px": 2.19089841842651
+              }
+            ],
+            "reached_all": true,
+            "route": "moonwell_to_gatekeeper"
+          },
+          {
+            "location": "forest",
+            "movements": [
+              {
+                "collider_name": "LumenwoodCrossingBoundary",
+                "elapsed_seconds": 1.2,
+                "final_position": [
+                  315.184173583984,
+                  334.944458007813
+                ],
+                "outcome": "BLOCKED",
+                "slide_collision_count": 3,
+                "target": [
+                  700.0,
+                  760.0
+                ],
+                "target_error_px": 573.372009277344
+              }
+            ],
+            "reached_all": false,
+            "route": "spawn_to_star_seed"
+          },
+          {
+            "location": "forest",
+            "movements": [
+              {
+                "collider_name": "LumenwoodCrossingBoundary",
+                "elapsed_seconds": 0.0166666666666667,
+                "final_position": [
+                  318.349914550781,
+                  334.025604248047
+                ],
+                "outcome": "BLOCKED",
+                "slide_collision_count": 3,
+                "target": [
+                  560.0,
+                  470.0
+                ],
+                "target_error_px": 277.279296875
+              }
+            ],
+            "reached_all": false,
+            "route": "star_seed_to_root_arch"
+          }
+        ]
+      },
+      "name": "complete_vertical_slice",
+      "passed": false
+    },
+    {
+      "evidence": {
+        "collected_seed": true,
+        "collected_water": true,
+        "delivered_water": true,
+        "snapshot": {
+          "ending_visible": false,
+          "inventory": [
+            "star_seed"
+          ],
+          "location": "forest",
+          "player_position": [
+            430.0,
+            500.0
+          ],
+          "quest_state": "enter_sanctuary"
+        }
+      },
+      "name": "inventory_contract",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "expected_position": [
+          610,
+          620
+        ],
+        "loaded": false,
+        "saved": true,
+        "snapshot": {
+          "ending_visible": false,
+          "inventory": [],
+          "location": "town",
+          "player_position": [
+            836.0,
+            860.0
+          ],
+          "quest_state": "find_mora"
+        }
+      },
+      "name": "save_load_roundtrip",
+      "passed": false
+    },
+    {
+      "evidence": {
+        "cases": [
+          {
+            "case": "wrong_schema",
+            "live_state_unchanged": true,
+            "loaded": false
+          },
+          {
+            "case": "outside_boundary",
+            "live_state_unchanged": true,
+            "loaded": false
+          },
+          {
+            "case": "state_location_mismatch",
+            "live_state_unchanged": true,
+            "loaded": false
+          }
+        ],
+        "snapshot": {
+          "ending_visible": false,
+          "inventory": [],
+          "location": "town",
+          "player_position": [
+            836.0,
+            860.0
+          ],
+          "quest_state": "find_mora"
+        }
+      },
+      "name": "invalid_save_rejected",
+      "passed": true
+    },
+    {
+      "evidence": {
+        "ending_visible": false,
+        "inventory": [],
+        "location": "town",
+        "player_position": [
+          836.0,
+          860.0
+        ],
+        "quest_state": "find_mora"
+      },
+      "name": "new_game_reset",
+      "passed": true
+    },
+    {
+      "evidence": [
+        {
+          "location": "town",
+          "result": {
+            "collider_name": "MoonwellBasin",
+            "elapsed_seconds": 0.2,
+            "final_position": [
+              842.0,
+              645.002380371094
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 1,
+            "target": [
+              842.0,
+              545.0
+            ],
+            "target_error_px": 100.002380371094
+          }
+        },
+        {
+          "location": "forest",
+          "result": {
+            "collider_name": "LumenwoodCrossingBoundary",
+            "elapsed_seconds": 1.9,
+            "final_position": [
+              594.655212402344,
+              253.807754516602
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 3,
+            "target": [
+              1230.0,
+              465.0
+            ],
+            "target_error_px": 669.526062011719
+          }
+        },
+        {
+          "location": "sanctuary",
+          "result": {
+            "collider_name": "HeartrootAltar",
+            "elapsed_seconds": 0.15,
+            "final_position": [
+              836.0,
+              391.007904052734
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 1,
+            "target": [
+              836.0,
+              285.0
+            ],
+            "target_error_px": 106.007904052734
+          }
+        }
+      ],
+      "name": "landmark_collisions",
+      "passed": false
+    },
+    {
+      "evidence": [
+        {
+          "location": "town",
+          "result": {
+            "collider_name": "MoonrootHollowBoundary",
+            "elapsed_seconds": 0.183333333333333,
+            "final_position": [
+              836.0,
+              909.984558105469
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 1,
+            "target": [
+              836.0,
+              980.0
+            ],
+            "target_error_px": 70.0154418945313
+          }
+        },
+        {
+          "location": "forest",
+          "result": {
+            "collider_name": "",
+            "elapsed_seconds": 3.18333333333333,
+            "final_position": [
+              90.0,
+              981.3349609375
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              90.0,
+              980.0
+            ],
+            "target_error_px": 1.3349609375
+          }
+        },
+        {
+          "location": "sanctuary",
+          "result": {
+            "collider_name": "HeartrootSanctuaryBoundary",
+            "elapsed_seconds": 0.05,
+            "final_position": [
+              836.0,
+              859.980529785156
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 1,
+            "target": [
+              836.0,
+              980.0
+            ],
+            "target_error_px": 120.019470214844
+          }
+        }
+      ],
+      "name": "location_boundaries",
+      "passed": false
+    }
+  ],
+  "suite": "experiment_h_vertical_slice"
+}

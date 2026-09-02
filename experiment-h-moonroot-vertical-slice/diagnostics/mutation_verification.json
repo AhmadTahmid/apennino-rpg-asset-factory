@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "mutation_count": 6,
+  "failures": [],
+  "evidence": {
+    "portal_bypass": {
+      "expected_failed_tests": [
+        "locked_portal_contract"
+      ],
+      "actual_failed_tests": [
+        "locked_portal_contract"
+      ]
+    },
+    "missing_star_seed": {
+      "expected_failed_tests": [
+        "complete_vertical_slice",
+        "inventory_contract"
+      ],
+      "actual_failed_tests": [
+        "complete_vertical_slice",
+        "inventory_contract"
+      ]
+    },
+    "missing_completion": {
+      "expected_failed_tests": [
+        "complete_vertical_slice"
+      ],
+      "actual_failed_tests": [
+        "complete_vertical_slice"
+      ]
+    },
+    "wrong_forest_spawn": {
+      "expected_failed_tests": [
+        "complete_vertical_slice",
+        "save_load_roundtrip",
+        "landmark_collisions",
+        "location_boundaries"
+      ],
+      "actual_failed_tests": [
+        "complete_vertical_slice",
+        "save_load_roundtrip",
+        "landmark_collisions",
+        "location_boundaries"
+      ]
+    },
+    "forest_corridor_blocker": {
+      "expected_failed_tests": [
+        "complete_vertical_slice",
+        "landmark_collisions"
+      ],
+      "actual_failed_tests": [
+        "complete_vertical_slice",
+        "landmark_collisions"
+      ]
+    },
+    "save_state_drift": {
+      "expected_failed_tests": [
+        "save_load_roundtrip"
+      ],
+      "actual_failed_tests": [
+        "save_load_roundtrip"
+      ]
+    }
+  }
+}

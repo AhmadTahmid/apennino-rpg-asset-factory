@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "failures": [],
+  "assets": {
+    "assets/moonroot_hollow.png": {
+      "sha256": "7B4DF1C2EB62D1E1C12893E5F9D4B3E3DF28249C5323F8C6D9C9294194D09674",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    "assets/lumenwood_crossing.png": {
+      "sha256": "1B79BBC4ABE4011860D867EA54A5F2183A1E028F57AD650AEA35DDB7D1D34FF8",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    "assets/heartroot_sanctuary.png": {
+      "sha256": "0234F095E91097B296051DBF73A702C5470F9138148597127B74C649E4A621C0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    "assets/traveler_walk_sheet.png": {
+      "sha256": "4433340653530325DA27FE497E17226741B926404283383F1006FE7FE0FB6876",
+      "dimensions": [
+        144,
+        256
+      ],
+      "mode": "RGBA"
+    }
+  },
+  "manifest_sha256": "2EFC7DD695D9896FFDACF421C1F69C1378E70821BE370FDCDB1C4161558D7008",
+  "expected_manifest_sha256": "2EFC7DD695D9896FFDACF421C1F69C1378E70821BE370FDCDB1C4161558D7008",
+  "checked_gameplay_points": 29,
+  "outside_gameplay_points": [],
+  "visible_art_policy": {
+    "svg_file_count": 0,
+    "non_raster_asset_count": 0,
+    "banned_visible_node_types": [],
+    "procedural_draw_calls": [],
+    "passed": true
+  }
+}

@@ -207,6 +207,9 @@ and no-player baseline pixels.
 | Automatic portal placement or inferred physical continuity | Open question | Unvalidated |
 | Lean new RPG town with complete linear quest | Gameplay-first raster generation + reused Godot runtime | Validated once |
 | Raster-only visible art policy | PNG asset scan + scene/script primitive scan + real render | Validated in Moonroot Hollow |
+| Multi-location fantastical vertical slice | Gameplay-first raster plates + one declarative manifest runtime | Validated for three linear, one-elevation nodes |
+| Save/load integrity | Schema validation + exact state/inventory/location/position round trip | Validated, including invalid-save and drift mutations |
+| Automatic manifest extraction from art or video | Open question | Unvalidated |
 
 ## Recommended experimental order
 
@@ -228,14 +231,21 @@ and no-player baseline pixels.
     cleanup work, geometry effort, and failures instead of rebuilding the proof.
 11. Add new capability tests only for interaction, elevation, dynamic depth, or
     other genuinely new semantics.
+12. For new fantastical nodes, specify entry, exit, walk lane, elevation count,
+    landmark anchors, and exclusions in the art prompt before generating pixels.
+13. Put repeated map mechanics behind one engine-neutral manifest; measure the
+    human correction needed for its geometry instead of counting generated maps.
 
 ## Current macro status
 
-The project has reached a defensible two-node playable result with animated
-embodiment, one local depth interaction, and explicit round-trip continuity. It
-has not reached automatic video-to-map compilation, production-matched
-character integration, automatic geometry/portal extraction, multi-elevation
-play, or general scene depth. The next useful question is no longer whether a
-second simple node is possible; it is whether two or three more nodes can be
-added with a falling repair rate and bounded manual geometry effort while the
-same validation template remains unchanged.
+The project now has two distinct defensible results: a two-node video-inspired
+Appennino branch with local depth and round-trip continuity, and a three-node
+from-scratch fantastical branch with a complete persistent quest and ending.
+Experiment H shows that adding authored one-elevation locations need not mean
+adding Godot scenes; two new first-pass raster plates used the same manifest
+runtime and validation architecture. It has not reached automatic video-to-map
+compilation, production-matched character integration, automatic geometry or
+portal extraction, multi-elevation play, or general scene depth. The next
+useful question is the correction rate of a draft-manifest compiler, because
+semantic geometry—not runtime scene assembly—is now the clearest shared
+bottleneck.

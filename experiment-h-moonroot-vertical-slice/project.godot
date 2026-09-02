@@ -1,0 +1,28 @@
+; Moonroot Hollow: three-node manifest-driven vertical slice.
+
+config_version=5
+
+[application]
+
+config/name="Moonroot Hollow: The Star-Seed"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+
+window/size/viewport_width=1672
+window/size/viewport_height=941
+window/size/initial_width=1280
+window/size/initial_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+
+[physics]
+
+common/physics_ticks_per_second=60

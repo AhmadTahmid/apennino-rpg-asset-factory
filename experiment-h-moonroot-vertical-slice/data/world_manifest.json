@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "native_image_pixels_origin_top_left",
+  "image_size": [1672, 941],
+  "authorship": "manual conservative alignment against three locked raster plates",
+  "start_location": "town",
+  "player": {
+    "foot_collider_radius_px": 14,
+    "speed_px_per_second": 280,
+    "sprite_scale": [2, 2]
+  },
+  "locations": {
+    "town": {
+      "name": "Moonroot Hollow",
+      "art": "res://assets/moonroot_hollow.png",
+      "spawn": [836, 860],
+      "walkable_boundary": [[310,440],[1360,440],[1510,585],[1520,700],[1380,850],[1180,920],[520,920],[300,870],[150,700],[160,560]],
+      "obstacles": [
+        {"id":"moonwell","node_name":"MoonwellBasin","shape":"ellipse","center":[842,545],"radii":[115,82],"segments":32}
+      ],
+      "interactions": {
+        "apothecary": {"anchor":[400,590],"radius_px":70},
+        "moonwell": {"anchor":[842,650],"radius_px":55},
+        "gatekeeper": {"anchor":[1380,620],"radius_px":75}
+      },
+      "tested_routes": {
+        "spawn_to_apothecary": [[650,800],[480,700],[400,590]],
+        "apothecary_to_moonwell": [[560,650],[700,680],[842,650]],
+        "moonwell_to_gatekeeper": [[1040,700],[1230,680],[1380,620]]
+      }
+    },
+    "forest": {
+      "name": "Lumenwood Crossing",
+      "art": "res://assets/lumenwood_crossing.png",
+      "spawn": [836, 850],
+      "walkable_boundary": [[220,900],[1450,900],[1530,760],[1530,520],[1380,360],[1050,250],[960,195],[710,195],[610,260],[300,350],[150,520],[150,760]],
+      "obstacles": [
+        {"id":"moon_basin","node_name":"ForestMoonBasin","shape":"ellipse","center":[1230,465],"radii":[112,72],"segments":32}
+      ],
+      "interactions": {
+        "star_seed": {"anchor":[430,500],"radius_px":76},
+        "moon_basin": {"anchor":[1230,565],"radius_px":65},
+        "root_arch": {"anchor":[836,330],"radius_px":75}
+      },
+      "tested_routes": {
+        "spawn_to_star_seed": [[700,760],[570,640],[470,540],[430,500]],
+        "star_seed_to_root_arch": [[560,470],[700,410],[836,330]]
+      }
+    },
+    "sanctuary": {
+      "name": "Heartroot Sanctuary",
+      "art": "res://assets/heartroot_sanctuary.png",
+      "spawn": [836,850],
+      "walkable_boundary": [[310,870],[1360,870],[1510,650],[1460,400],[1280,270],[1050,210],[620,210],[380,270],[210,420],[170,650]],
+      "obstacles": [
+        {"id":"heartroot_altar","node_name":"HeartrootAltar","shape":"ellipse","center":[836,285],"radii":[145,88],"segments":32}
+      ],
+      "interactions": {
+        "heartroot_altar": {"anchor":[836,405],"radius_px":72}
+      },
+      "tested_routes": {
+        "spawn_to_heartroot": [[836,700],[836,560],[836,405]]
+      }
+    }
+  }
+}

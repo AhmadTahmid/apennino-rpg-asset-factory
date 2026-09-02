@@ -1,0 +1,43 @@
+{
+  "experiment_id": "experiment_h_moonroot_vertical_slice",
+  "status": "completed_passed_three_location_vertical_slice",
+  "objective": "Push the fastest raster-first AI-native workflow from a one-screen quest to a compact, persistent, three-location RPG vertical slice while retaining falsifiable evidence.",
+  "runtime": {
+    "engine": "Godot 4.7.2",
+    "architecture": "one generic runtime plus declarative JSON world manifest",
+    "manifest": "data/world_manifest.json",
+    "manifest_sha256": "2EFC7DD695D9896FFDACF421C1F69C1378E70821BE370FDCDB1C4161558D7008"
+  },
+  "visible_art_policy": {
+    "svg_count": 0,
+    "procedural_visible_draw_calls": 0,
+    "visible_illustration_formats": ["PNG"],
+    "collision_geometry_visible": false,
+    "post_generation_pixel_operations": 0
+  },
+  "scope": {
+    "locations": ["Moonroot Hollow", "Lumenwood Crossing", "Heartroot Sanctuary"],
+    "quest_states": 8,
+    "inventory_item_types": 2,
+    "save_load": true,
+    "invalid_save_rejection": true,
+    "restart": true,
+    "ending": true
+  },
+  "validation": {
+    "normal_contracts_passed": 12,
+    "normal_contracts_failed": 0,
+    "mutations_detected": 6,
+    "real_renderer_locations_verified": 3,
+    "baseline_equals_locked_art_for_all_locations": true,
+    "traveler_changed_pixels_per_location": 3956
+  },
+  "conclusion": "The workflow scales cleanly across a small linear adventure when visual topology is specified before image generation and one manifest-driven runtime owns all repeated mechanics. The remaining bottleneck is authoring semantic geometry and state, not Godot scene assembly.",
+  "nonclaims": [
+    "automatic geometry extraction",
+    "production-scale branching narrative",
+    "combat, animated NPCs, audio, dynamic lighting, or accessibility completeness",
+    "reference-faithful video reconstruction",
+    "browser or mobile export"
+  ]
+}
