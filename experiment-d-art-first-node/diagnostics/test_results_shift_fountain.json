@@ -1,0 +1,209 @@
+{
+  "experiment": "experiment_d_art_first_node",
+  "failure_count": 4,
+  "godot_version": "4.7.2-stable (official)",
+  "mutation": "shift_fountain",
+  "passed": false,
+  "results": [
+    {
+      "evidence": {
+        "art_dimensions": [
+          1672,
+          941
+        ],
+        "art_hash": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+        "expected_art_hash": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+        "expected_dimensions": [
+          1672,
+          941
+        ],
+        "expected_player_hash": "21B0086C676A466196D97E72889D13940BE62922A5439624C2605ECE68157102",
+        "player_hash": "21B0086C676A466196D97E72889D13940BE62922A5439624C2605ECE68157102"
+      },
+      "status": "PASS",
+      "test": "asset_integrity"
+    },
+    {
+      "evidence": {
+        "expected_fountain_collider": "FountainBasin",
+        "fountain_center_colliders": [],
+        "unexpected_open_point_colliders": [
+          {
+            "colliders": [
+              "FountainBasin"
+            ],
+            "point": [
+              1095.0,
+              655.0
+            ]
+          }
+        ]
+      },
+      "status": "FAIL",
+      "test": "collision_probe_contract"
+    },
+    {
+      "evidence": {
+        "minimum_expected": 0.98,
+        "movement": {
+          "collider_name": "",
+          "elapsed_seconds": 0.616666666666667,
+          "final_position": [
+            892.902648925781,
+            612.193237304688
+          ],
+          "outcome": "REACHED",
+          "slide_collision_count": 0,
+          "target": [
+            894.0,
+            612.0
+          ],
+          "target_error_px": 1.11423516273499
+        },
+        "normalized_final_distance": 0.00929825939238071
+      },
+      "status": "FAIL",
+      "test": "fountain_blocking"
+    },
+    {
+      "evidence": {
+        "destination_error_px": 85.4180526733398,
+        "legs": [
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.283333333333333,
+            "final_position": [
+              668.367004394531,
+              639.65380859375
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              669.0,
+              640.0
+            ],
+            "target_error_px": 0.721478939056396
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.433333333333333,
+            "final_position": [
+              760.097595214844,
+              705.069580078125
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              760.0,
+              705.0
+            ],
+            "target_error_px": 0.119859136641026
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.5,
+            "final_position": [
+              889.221313476563,
+              720.142578125
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              888.0,
+              720.0
+            ],
+            "target_error_px": 1.22960770130157
+          },
+          {
+            "collider_name": "",
+            "elapsed_seconds": 0.5,
+            "final_position": [
+              1017.70642089844,
+              700.353271484375
+            ],
+            "outcome": "REACHED",
+            "slide_collision_count": 0,
+            "target": [
+              1020.0,
+              700.0
+            ],
+            "target_error_px": 2.3206262588501
+          },
+          {
+            "collider_name": "FountainBasin",
+            "elapsed_seconds": 0.0166666666666667,
+            "final_position": [
+              1021.384765625,
+              698.324829101563
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 2,
+            "target": [
+              1095.0,
+              655.0
+            ],
+            "target_error_px": 85.4180526733398
+          }
+        ],
+        "maximum_destination_error_px": 6.0
+      },
+      "status": "FAIL",
+      "test": "lower_court_outbound"
+    },
+    {
+      "evidence": {
+        "legs": [
+          {
+            "collider_name": "FountainBasin",
+            "elapsed_seconds": 0.0166666666666667,
+            "final_position": [
+              1100.83544921875,
+              704.074890136719
+            ],
+            "outcome": "BLOCKED",
+            "slide_collision_count": 4,
+            "target": [
+              1020.0,
+              700.0
+            ],
+            "target_error_px": 80.9380874633789
+          }
+        ],
+        "maximum_return_error_px": 6.0,
+        "return_error_px": 368.982757568359
+      },
+      "status": "FAIL",
+      "test": "lower_court_return"
+    },
+    {
+      "evidence": {
+        "expected_collider": "PlazaBoundary",
+        "movement": {
+          "collider_name": "PlazaBoundary",
+          "elapsed_seconds": 0.216666666666667,
+          "final_position": [
+            678.851501464844,
+            688.192932128906
+          ],
+          "outcome": "BLOCKED",
+          "slide_collision_count": 3,
+          "target": [
+            560.0,
+            720.0
+          ],
+          "target_error_px": 123.034019470215
+        }
+      },
+      "status": "PASS",
+      "test": "outer_boundary"
+    }
+  ],
+  "source_hashes": {
+    "geometry": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+    "main_scene": "38182386694BD9570A91F29633F36974B508B017261C0248C314CB14AF9D26C2",
+    "player_script": "233F46486984F8FE905BF7FA73898DFD345398CAD185B37B350B652FD43E1868",
+    "test_script": "EDBDC3C59C412A3476D182513D5F1FA7355B5D67BD3FB1A1FCD1B2B03CC38EC9",
+    "world_script": "F4F4EA5D4AEFF8E38B860ACD4BBB2EB666632D85E66C36FDF3A09E63A92D00D0"
+  },
+  "timestamp_utc": "2026-09-02 13:15:18"
+}

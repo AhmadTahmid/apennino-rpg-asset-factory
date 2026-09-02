@@ -5,3 +5,5 @@ __pycache__/
 *.blend@
 .godot/
 *.tmp
+*.import
+experiment-d-art-first-node/diagnostics/*.log

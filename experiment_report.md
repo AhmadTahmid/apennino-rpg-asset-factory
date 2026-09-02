@@ -1,5 +1,9 @@
 # Technical & Artistic Experiment Report: Blender Procedural 3D → 2D Asset Factory
 
+> **Historical report:** numeric scores and conclusions below predate the
+> independent audit and should not be treated as validated measurements. The
+> current evidence ledger is [`FINDINGS.md`](FINDINGS.md).
+
 **Project**: Italian/Appennino Hill-Town RPG Asset Pipeline  
 **Author**: Antigravity Autonomous Agent  
 **Date**: September 2026  

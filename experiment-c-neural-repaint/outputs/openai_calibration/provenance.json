@@ -1,0 +1,20 @@
+{
+  "candidate": "openai_structure_01.png",
+  "purpose": "cross-model structure-conditioned calibration; excluded from the locked Gemini candidate matrix",
+  "generator": "OpenAI built-in image generation tool",
+  "model": null,
+  "model_version": null,
+  "timestamp": "2026-09-02T13:20:05.0229074+02:00",
+  "original_dimensions_px": [1672, 941],
+  "sha256": "238E0C9EC0704F7BA5896BA75A9F862229362E5CE221BEF34194E895D926E7371",
+  "input_paths": [
+    "../../../output/scene/clean.png",
+    "../../../appennino-2d-asset-factory/style/anchor_board.png",
+    "../../../reference_frames/frame_001.jpg",
+    "../../../reference_frames/frame_003.jpg"
+  ],
+  "exact_prompt": "Use case: style-transfer\nAsset type: full-frame 2D/2.5D RPG environment calibration candidate\nInput images: Image 1 is the edit target and spatial source of truth; Image 2 is the style board; Images 3 and 4 are aesthetic/world references.\nPrimary request: Repaint Image 1 as one beautiful, authored Appennino hill-town RPG scene in the cohesive pixel-painterly JRPG visual language of Images 2–4.\nScene/backdrop: Preserve Image 1's complete connected village layout, streets, stairs, retaining walls, buildings, circular fountain, arched alley, and visible ground. Add blue-green atmospheric depth only where it does not replace or move existing geometry.\nStyle/medium: richly illustrated pixel-painterly game art; aged warm limestone, detailed terracotta barrel tiles, olive shutters, geraniums, ivy, restrained lived-in props; consistent pixel density and line treatment across the whole frame.\nComposition/framing: exact 16:9 framing and elevated three-quarter camera of Image 1.\nLighting/mood: one coherent warm morning light from upper left with consistent contact shadows; inviting, inhabited, explorable.\nConstraints: preserve Image 1's major silhouettes and coordinates, including all three foreground roof masses, fountain center, upper path junction, arched alley, connected walkable corridors, stairs, doors, and retaining-wall boundaries. Do not crop, rotate, mirror, zoom, move, delete, or add major architecture. Small decorative enrichment must not obstruct navigation. Produce a single unified scene, not modular cutouts.\nAvoid: asset sheet, isolated sprites, collage seams, white background, labels, UI, text, borders, watermarks, inconsistent cameras, giant props, blocked paths, extra buildings, altered fountain position.",
+  "seed": null,
+  "job_or_request_id": null,
+  "settings": null
+}

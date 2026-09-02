@@ -1,0 +1,51 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "model": null,
+  "model_version": null,
+  "runs": [
+    {
+      "candidate": "control_01.png",
+      "timestamp": null,
+      "input_paths": [],
+      "exact_prompt": null,
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": null,
+      "sha256": null
+    },
+    {
+      "candidate": "control_02.png",
+      "timestamp": null,
+      "input_paths": [],
+      "exact_prompt": null,
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": null,
+      "sha256": null
+    },
+    {
+      "candidate": "structure_01.png",
+      "timestamp": null,
+      "input_paths": [],
+      "exact_prompt": null,
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": null,
+      "sha256": null
+    },
+    {
+      "candidate": "structure_02.png",
+      "timestamp": null,
+      "input_paths": [],
+      "exact_prompt": null,
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": null,
+      "sha256": null
+    }
+  ]
+}

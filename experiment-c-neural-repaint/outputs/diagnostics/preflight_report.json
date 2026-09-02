@@ -1,0 +1,95 @@
+{
+  "experiment_id": "experiment_c_controlled_neural_repaint",
+  "passed": true,
+  "failures": [],
+  "inputs": [
+    {
+      "path": "D:\\Apennino scene\\output\\scene\\clean.png",
+      "sha256": "2C40D945048D1B5C4067872BB31B81CC076D11CE9718114740BF2126C85B32B0",
+      "dimensions_px": [
+        1920,
+        1080
+      ],
+      "channel_mean": [
+        156.899,
+        146.526,
+        131.952
+      ],
+      "channel_stddev": [
+        49.018,
+        42.502,
+        44.971
+      ],
+      "edge_coverage_over_32": 0.11346,
+      "role": "structural_source",
+      "expected_sha256": "2C40D945048D1B5C4067872BB31B81CC076D11CE9718114740BF2126C85B32B0",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "D:\\Apennino scene\\appennino-2d-asset-factory\\style\\anchor_board.png",
+      "sha256": "B2E24BC82F7FEC3C7530BF6893D99DE4F3F8B5D79F488AC1532BF8A30F87B019",
+      "dimensions_px": [
+        1200,
+        900
+      ],
+      "channel_mean": [
+        87.365,
+        81.086,
+        70.125
+      ],
+      "channel_stddev": [
+        62.292,
+        60.838,
+        54.632
+      ],
+      "edge_coverage_over_32": 0.11327,
+      "role": "style_anchor",
+      "expected_sha256": "B2E24BC82F7FEC3C7530BF6893D99DE4F3F8B5D79F488AC1532BF8A30F87B019",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "D:\\Apennino scene\\reference_frames\\frame_001.jpg",
+      "sha256": "9D64E4BDACB94389C2BE0271537DCE3137E6E046589A629EFAA40FA9A068DB23",
+      "dimensions_px": [
+        1280,
+        720
+      ],
+      "channel_mean": [
+        129.962,
+        123.777,
+        103.985
+      ],
+      "channel_stddev": [
+        51.344,
+        58.735,
+        58.527
+      ],
+      "edge_coverage_over_32": 0.17113,
+      "role": "reference_frame_1",
+      "expected_sha256": "9D64E4BDACB94389C2BE0271537DCE3137E6E046589A629EFAA40FA9A068DB23",
+      "hash_matches_manifest": true
+    },
+    {
+      "path": "D:\\Apennino scene\\reference_frames\\frame_003.jpg",
+      "sha256": "0FB3598D3A4CF85D425006E5EDF98C8F907AD5FF8E5108224B1D74F2E61CC5F5",
+      "dimensions_px": [
+        1280,
+        720
+      ],
+      "channel_mean": [
+        128.647,
+        118.637,
+        100.49
+      ],
+      "channel_stddev": [
+        50.049,
+        53.664,
+        51.809
+      ],
+      "edge_coverage_over_32": 0.20945,
+      "role": "reference_frame_2",
+      "expected_sha256": "0FB3598D3A4CF85D425006E5EDF98C8F907AD5FF8E5108224B1D74F2E61CC5F5",
+      "hash_matches_manifest": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "experiment_id": "experiment_d_art_first_playable_node",
+  "status": "completed_passed_narrow_scope",
+  "hypothesis": "A visually coherent generated scene can support a small honest playable node when gameplay geometry is authored against the final art.",
+  "source_video": {
+    "path": "../A_random_Appennino_Italian_tow.mp4",
+    "duration_seconds": 10.005,
+    "dimensions_px": [1280, 720],
+    "fps": 24,
+    "included_in_experiment": false
+  },
+  "scene_art": {
+    "path": "assets/control_01.png",
+    "lineage": "Experiment C control_01; blind visual rank 1 of 4",
+    "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+    "dimensions_px": [1672, 941],
+    "postprocessed": false,
+    "provenance": "../experiment-c-neural-repaint/outputs/provenance.json"
+  },
+  "player_art": {
+    "path": "assets/player.png",
+    "sha256": "21B0086C676A466196D97E72889D13940BE62922A5439624C2605ECE68157102",
+    "dimensions_px": [48, 64],
+    "role": "functional test marker, not final art"
+  },
+  "engine": {
+    "name": "Godot",
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "renderer": "GL Compatibility"
+  },
+  "geometry": {
+    "path": "data/node_001_geometry.json",
+    "schema_version": 1,
+    "coordinate_system": "native 1672x941 image pixels, origin upper-left",
+    "authorship": "manual visual alignment against final art",
+    "sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4"
+  },
+  "success_conditions": [
+    "asset hashes and dimensions match",
+    "known open and solid probes match named colliders",
+    "fountain blocks the player with a BLOCKED outcome",
+    "lower west-south-east route is traversable without collision",
+    "lower-court return route reaches spawn without collision",
+    "outer plaza boundary blocks escape",
+    "shifted-fountain mutation is rejected",
+    "corridor-blocker mutation is rejected"
+  ],
+  "validation": {
+    "normal_suite": {
+      "passed": true,
+      "assertions_passed": 6,
+      "assertions_failed": 0,
+      "results": "diagnostics/test_results.json"
+    },
+    "mutations": [
+      {
+        "id": "shift_fountain",
+        "expected_to_fail": true,
+        "detected": true,
+        "results": "diagnostics/test_results_shift_fountain.json"
+      },
+      {
+        "id": "corridor_blocker",
+        "expected_to_fail": true,
+        "detected": true,
+        "results": "diagnostics/test_results_corridor_blocker.json"
+      }
+    ]
+  },
+  "nonclaims": [
+    "automatic collision extraction",
+    "semantic decomposition",
+    "stairs or elevation",
+    "roof or foliage occlusion",
+    "NPC interaction",
+    "whole-town playability",
+    "cross-node continuity"
+  ]
+}

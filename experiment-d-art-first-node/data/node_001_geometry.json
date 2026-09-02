@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "native_image_pixels_origin_top_left",
+  "image_size": [1672, 941],
+  "scope": "single_elevation_central_fountain_court",
+  "authorship": "manual_visual_alignment_against_final_art",
+  "player": {
+    "spawn": [733, 675],
+    "foot_collider_radius_px": 10,
+    "speed_px_per_second": 260
+  },
+  "walkable_boundary": [
+    [650, 610],
+    [772, 600],
+    [1016, 600],
+    [1105, 610],
+    [1160, 650],
+    [1170, 700],
+    [1045, 728],
+    [920, 752],
+    [775, 733],
+    [655, 688],
+    [622, 635]
+  ],
+  "obstacles": [
+    {
+      "id": "fountain_basin",
+      "node_name": "FountainBasin",
+      "shape": "ellipse",
+      "center": [894, 612],
+      "radii": [122, 82],
+      "segments": 32
+    }
+  ],
+  "tested_route": {
+    "id": "lower_court_u_route",
+    "waypoints": [
+      [733, 675],
+      [669, 640],
+      [760, 705],
+      [888, 720],
+      [1020, 700],
+      [1095, 655],
+      [1020, 700],
+      [888, 720],
+      [760, 705],
+      [733, 675]
+    ]
+  },
+  "closed_for_this_experiment": [
+    {"id": "northwest_stairs", "anchor": [545, 520], "reason": "ambiguous multi-level transitions"},
+    {"id": "east_street", "anchor": [1190, 683], "reason": "partially hidden by foreground architecture"},
+    {"id": "south_lower_level", "anchor": [800, 790], "reason": "roof and parapet occlusion hides the floor"},
+    {"id": "right_building_gaps", "anchor": [1240, 550], "reason": "dark façade gaps are not trustworthy corridors"}
+  ]
+}

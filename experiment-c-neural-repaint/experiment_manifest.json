@@ -1,0 +1,80 @@
+{
+  "experiment_id": "experiment_c_controlled_neural_repaint",
+  "status": "completed_stopped_at_structural_gate",
+  "hypothesis": "A neural image model can preserve a coherent full-scene spatial scaffold while repainting it into the target Appennino RPG aesthetic.",
+  "canvas": {
+    "aspect_ratio": "16:9",
+    "evaluation_size_px": [1920, 1080]
+  },
+  "inputs": [
+    {
+      "role": "structural_source",
+      "path": "../output/scene/clean.png",
+      "sha256": "2C40D945048D1B5C4067872BB31B81CC076D11CE9718114740BF2126C85B32B0"
+    },
+    {
+      "role": "style_anchor",
+      "path": "../appennino-2d-asset-factory/style/anchor_board.png",
+      "sha256": "B2E24BC82F7FEC3C7530BF6893D99DE4F3F8B5D79F488AC1532BF8A30F87B019"
+    },
+    {
+      "role": "reference_frame_1",
+      "path": "../reference_frames/frame_001.jpg",
+      "sha256": "9D64E4BDACB94389C2BE0271537DCE3137E6E046589A629EFAA40FA9A068DB23"
+    },
+    {
+      "role": "reference_frame_2",
+      "path": "../reference_frames/frame_003.jpg",
+      "sha256": "0FB3598D3A4CF85D425006E5EDF98C8F907AD5FF8E5108224B1D74F2E61CC5F5"
+    }
+  ],
+  "candidates": [
+    {"id": "control_01", "condition": "style_only"},
+    {"id": "control_02", "condition": "style_only"},
+    {"id": "structure_01", "condition": "style_plus_structure"},
+    {"id": "structure_02", "condition": "style_plus_structure"}
+  ],
+  "required_scene_elements": [
+    "multi-building Italian hill-town composition",
+    "connected stone streets and stairs",
+    "central circular fountain",
+    "three large foreground roof masses",
+    "upper residential façades",
+    "readable walkable corridors",
+    "warm limestone and terracotta materials",
+    "blue-green atmospheric mountain depth"
+  ],
+  "structural_landmarks_px": {
+    "left_foreground_roof_peak": [274, 378],
+    "central_foreground_roof_peak": [1068, 293],
+    "right_foreground_roof_peak": [1640, 287],
+    "fountain_center": [878, 823],
+    "upper_path_junction": [741, 369],
+    "arched_alley_center": [692, 752]
+  },
+  "hard_gates": {
+    "untouched_original_output": true,
+    "complete_provenance": true,
+    "all_required_scene_elements_present": true,
+    "no_portal_or_walkable_corridor_blocked": true,
+    "major_silhouettes_correspond_to_structural_source": true,
+    "fountain_and_path_network_remain_spatially_legible": true
+  },
+  "generator": "OpenAI built-in image generation",
+  "cancelled_generators": [
+    {
+      "generator": "Gemini via Antigravity",
+      "reason": "Cancelled by the user before any candidate output was accepted",
+      "accepted_candidate_count": 0
+    }
+  ],
+  "result": {
+    "aesthetic_hypothesis": "supported",
+    "mask_stable_repaint_hypothesis": "not_supported",
+    "godot_or_decomposition_started": false,
+    "reason_for_stop": "No candidate passed strict scaffold-preservation gates",
+    "results_path": "RESULTS.md"
+  },
+  "generator_may_score_its_own_output": false,
+  "postprocessed_derivatives_count_as_candidates": false
+}

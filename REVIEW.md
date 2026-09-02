@@ -1,5 +1,11 @@
 # Appennino RPG Asset Factory — Independent AI & Peer Review
 
+> **Historical dossier warning (September 2026):** later independent audit
+> invalidated Experiment B's beauty, decomposition, scoring, and 8/8 gameplay
+> claims. This file is preserved as evidence of the earlier conclusion, not as
+> the repository's current verdict. See [`FINDINGS.md`](FINDINGS.md) and
+> [`experiment-d-art-first-node/RESULTS.md`](experiment-d-art-first-node/RESULTS.md).
+
 This document provides a self-contained, reviewable record of the **Appennino RPG Asset Factory Experiments**:
 - **Experiment A**: Procedural 3D Blender vs. Independent 2D AI Sprites.
 - **Experiment B**: Whole-Scene Generation → Semantic Decomposition → Playable RPG Node in Godot 4.7.2.

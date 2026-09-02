@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "verified": [
+    {
+      "candidate": "control_01.png",
+      "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+      "dimensions_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "candidate": "control_02.png",
+      "sha256": "59ED7D4F0036ECAF0FBEE6DE29246C9895F2C4045F9BA9346ED7B211133A6A89",
+      "dimensions_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "candidate": "structure_01.png",
+      "sha256": "238E0C9EC0704F7BA5896BA75A9F862229362E5CE221BEF34194E895D926E737",
+      "dimensions_px": [
+        1672,
+        941
+      ]
+    },
+    {
+      "candidate": "structure_02.png",
+      "sha256": "E4159701BCB661B411F841AF83ED7D7CCC40BEBDE14DC0E31195CD821A269DFD",
+      "dimensions_px": [
+        1672,
+        941
+      ]
+    }
+  ],
+  "anonymous_labels": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ]
+}

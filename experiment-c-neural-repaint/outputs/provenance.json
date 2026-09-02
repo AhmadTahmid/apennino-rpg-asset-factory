@@ -1,0 +1,75 @@
+{
+  "generator": "OpenAI built-in image generation",
+  "model": null,
+  "model_version": null,
+  "notes": "The image tool did not expose model version, seed, request ID, or generation settings. Timestamps for newly generated files use the generated source file write time. structure_01 retains its originally recorded generation timestamp.",
+  "runs": [
+    {
+      "candidate": "control_01.png",
+      "timestamp": "2026-09-02T14:06:53.6383490+02:00",
+      "input_paths": [
+        "../../appennino-2d-asset-factory/style/anchor_board.png",
+        "../../reference_frames/frame_001.jpg",
+        "../../reference_frames/frame_003.jpg"
+      ],
+      "exact_prompt": "Use case: stylized-concept\nAsset type: complete 16:9 2D/2.5D RPG environment candidate\nInput images: Image 1 is the style board; Images 2 and 3 are aesthetic/world references.\nPrimary request: Generate one complete, unified Appennino hill-town RPG node using the attached images only as aesthetic and world-language references.\nScene/backdrop: Dense inhabited Italian hill town with multiple elevations, connected cobbled lanes and stairs, retaining walls, warm limestone buildings, terracotta barrel roofs, olive shutters, flower boxes, ivy, central stone fountain, readable player-scale circulation, and distant blue-green mountain atmosphere.\nStyle/medium: cohesive pixel-painterly JRPG game art matching the references; consistent pixel density, line treatment, material detail, camera, lighting, and contact shadows across the entire frame.\nComposition/framing: wide 16:9 elevated three-quarter game camera; one authored place with clear walkable corridors and scenic depth.\nLighting/mood: warm morning light from upper left; inviting and explorable.\nConstraints: one complete coherent scene, not an asset sheet or isolated cutout arrangement; architecture must share one camera; props must remain subordinate and correctly scaled; no obstructed streets or stairs.\nAvoid: collage seams, giant props, white background, labels, text, UI, borders, watermark, inconsistent viewpoints, floating assets.",
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": [1672, 941],
+      "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+      "generated_source_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-4b13100f-c9ae-402d-b7e0-01a6d8cffb3d.png"
+    },
+    {
+      "candidate": "control_02.png",
+      "timestamp": "2026-09-02T14:08:22.9499423+02:00",
+      "input_paths": [
+        "../../appennino-2d-asset-factory/style/anchor_board.png",
+        "../../reference_frames/frame_001.jpg",
+        "../../reference_frames/frame_003.jpg"
+      ],
+      "exact_prompt": "Use case: stylized-concept\nAsset type: complete 16:9 2D/2.5D RPG environment candidate\nInput images: Image 1 is the style board; Images 2 and 3 are aesthetic/world references.\nPrimary request: Generate one complete, unified Appennino hill-town RPG node using the attached images only as aesthetic and world-language references.\nScene/backdrop: Dense inhabited Italian hill town with multiple elevations, connected cobbled lanes and stairs, retaining walls, warm limestone buildings, terracotta barrel roofs, olive shutters, flower boxes, ivy, central stone fountain, readable player-scale circulation, and distant blue-green mountain atmosphere.\nStyle/medium: cohesive pixel-painterly JRPG game art matching the references; consistent pixel density, line treatment, material detail, camera, lighting, and contact shadows across the entire frame.\nComposition/framing: wide 16:9 elevated three-quarter game camera; one authored place with clear walkable corridors and scenic depth.\nLighting/mood: warm morning light from upper left; inviting and explorable.\nConstraints: one complete coherent scene, not an asset sheet or isolated cutout arrangement; architecture must share one camera; props must remain subordinate and correctly scaled; no obstructed streets or stairs.\nAvoid: collage seams, giant props, white background, labels, text, UI, borders, watermark, inconsistent viewpoints, floating assets.",
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": [1672, 941],
+      "sha256": "59ED7D4F0036ECAF0FBEE6DE29246C9895F2C4045F9BA9346ED7B211133A6A89",
+      "generated_source_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-5d9e043e-b0c8-41fd-a7a7-21f82a5d8dab.png"
+    },
+    {
+      "candidate": "structure_01.png",
+      "timestamp": "2026-09-02T13:20:05.0229074+02:00",
+      "input_paths": [
+        "../../output/scene/clean.png",
+        "../../appennino-2d-asset-factory/style/anchor_board.png",
+        "../../reference_frames/frame_001.jpg",
+        "../../reference_frames/frame_003.jpg"
+      ],
+      "exact_prompt": "Use case: style-transfer\nAsset type: full-frame 2D/2.5D RPG environment calibration candidate\nInput images: Image 1 is the edit target and spatial source of truth; Image 2 is the style board; Images 3 and 4 are aesthetic/world references.\nPrimary request: Repaint Image 1 as one beautiful, authored Appennino hill-town RPG scene in the cohesive pixel-painterly JRPG visual language of Images 2–4.\nScene/backdrop: Preserve Image 1's complete connected village layout, streets, stairs, retaining walls, buildings, circular fountain, arched alley, and visible ground. Add blue-green atmospheric depth only where it does not replace or move existing geometry.\nStyle/medium: richly illustrated pixel-painterly game art; aged warm limestone, detailed terracotta barrel tiles, olive shutters, geraniums, ivy, restrained lived-in props; consistent pixel density and line treatment across the whole frame.\nComposition/framing: exact 16:9 framing and elevated three-quarter camera of Image 1.\nLighting/mood: one coherent warm morning light from upper left with consistent contact shadows; inviting, inhabited, explorable.\nConstraints: preserve Image 1's major silhouettes and coordinates, including all three foreground roof masses, fountain center, upper path junction, arched alley, connected walkable corridors, stairs, doors, and retaining-wall boundaries. Do not crop, rotate, mirror, zoom, move, delete, or add major architecture. Small decorative enrichment must not obstruct navigation. Produce a single unified scene, not modular cutouts.\nAvoid: asset sheet, isolated sprites, collage seams, white background, labels, UI, text, borders, watermarks, inconsistent cameras, giant props, blocked paths, extra buildings, altered fountain position.",
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": [1672, 941],
+      "sha256": "238E0C9EC0704F7BA5896BA75A9F862229362E5CE221BEF34194E895D926E737",
+      "generated_source_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-b8ef0dcc-51c8-433f-a06c-ee9c046e5afa.png",
+      "history": "Initially recorded as a cross-model calibration, then promoted unchanged into the OpenAI-only matrix after Gemini was cancelled."
+    },
+    {
+      "candidate": "structure_02.png",
+      "timestamp": "2026-09-02T14:09:54.7576917+02:00",
+      "input_paths": [
+        "../../output/scene/clean.png",
+        "../../appennino-2d-asset-factory/style/anchor_board.png",
+        "../../reference_frames/frame_001.jpg",
+        "../../reference_frames/frame_003.jpg"
+      ],
+      "exact_prompt": "Use case: style-transfer\nAsset type: full-frame 2D/2.5D RPG environment calibration candidate\nInput images: Image 1 is the edit target and spatial source of truth; Image 2 is the style board; Images 3 and 4 are aesthetic/world references.\nPrimary request: Repaint Image 1 as one beautiful, authored Appennino hill-town RPG scene in the cohesive pixel-painterly JRPG visual language of Images 2–4.\nScene/backdrop: Preserve Image 1's complete connected village layout, streets, stairs, retaining walls, buildings, circular fountain, arched alley, and visible ground. Add blue-green atmospheric depth only where it does not replace or move existing geometry.\nStyle/medium: richly illustrated pixel-painterly game art; aged warm limestone, detailed terracotta barrel tiles, olive shutters, geraniums, ivy, restrained lived-in props; consistent pixel density and line treatment across the whole frame.\nComposition/framing: exact 16:9 framing and elevated three-quarter camera of Image 1.\nLighting/mood: one coherent warm morning light from upper left with consistent contact shadows; inviting, inhabited, explorable.\nConstraints: preserve Image 1's major silhouettes and coordinates, including all three foreground roof masses, fountain center, upper path junction, arched alley, connected walkable corridors, stairs, doors, and retaining-wall boundaries. Do not crop, rotate, mirror, zoom, move, delete, or add major architecture. Small decorative enrichment must not obstruct navigation. Produce a single unified scene, not modular cutouts.\nAvoid: asset sheet, isolated sprites, collage seams, white background, labels, UI, text, borders, watermarks, inconsistent cameras, giant props, blocked paths, extra buildings, altered fountain position.",
+      "seed": null,
+      "job_or_request_id": null,
+      "settings": null,
+      "original_dimensions_px": [1672, 941],
+      "sha256": "E4159701BCB661B411F841AF83ED7D7CCC40BEBDE14DC0E31195CD821A269DFD",
+      "generated_source_path": "C:/Users/Acer/.codex/generated_images/01a061b1-e594-7251-afcf-e46fa4b89780/exec-19bfa290-f4f9-4c5d-83b5-b991dd8a78e7.png"
+    }
+  ]
+}

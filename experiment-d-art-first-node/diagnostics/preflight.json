@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "failures": [],
+  "checked_assets": [
+    {
+      "path": "D:\\Apennino scene\\experiment-d-art-first-node\\assets\\control_01.png",
+      "sha256": "FD11B82DEAD94E5BF5CB30F9DD9F718C84C5D9D5AAFD8170483FA222B5CBB54F",
+      "dimensions": [
+        1672,
+        941
+      ]
+    },
+    {
+      "path": "D:\\Apennino scene\\experiment-d-art-first-node\\assets\\player.png",
+      "sha256": "21B0086C676A466196D97E72889D13940BE62922A5439624C2605ECE68157102",
+      "dimensions": [
+        48,
+        64
+      ]
+    }
+  ],
+  "geometry_sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+  "expected_geometry_sha256": "DF0924A62B4216268C7152070644BBDC9635CF19A4693A2290003C5D6C38CAF4",
+  "geometry_schema_version": 1
+}

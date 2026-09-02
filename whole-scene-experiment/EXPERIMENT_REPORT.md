@@ -1,5 +1,11 @@
 # Experiment B Report: Whole-Scene Generation → Semantic Decomposition → Playable RPG Node
 
+> **Invalidated historical report:** independent audit found that the beauty
+> master was nearly blank, later candidates were Pillow filters, scores were
+> hard-coded, reconstruction PSNR was tautological, and the Godot suite could
+> not fail honestly. The artifacts remain for failure analysis. Current results
+> are in `../FINDINGS.md` and `../experiment-d-art-first-node/RESULTS.md`.
+
 ## Executive Summary & Verdict
 
 ### Final Verdict: **YES — Credible Production Architecture**

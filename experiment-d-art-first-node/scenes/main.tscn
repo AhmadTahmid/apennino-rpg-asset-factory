@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/node_world.gd" id="1_world"]
+[ext_resource type="Texture2D" path="res://assets/control_01.png" id="2_scene"]
+[ext_resource type="Script" path="res://scripts/player_controller.gd" id="3_player"]
+[ext_resource type="Texture2D" path="res://assets/player.png" id="4_player_texture"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_feet"]
+radius = 10.0
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_world")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(836, 470.5)
+texture = ExtResource("2_scene")
+
+[node name="CollisionGeometry" type="Node2D" parent="."]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(733, 675)
+z_index = 10
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("3_player")
+
+[node name="Feet" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_feet")
+
+[node name="Sprite" type="Sprite2D" parent="Player"]
+position = Vector2(0, -31)
+texture = ExtResource("4_player_texture")
+
+[node name="Interface" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="ColorRect" parent="Interface"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 620.0
+offset_bottom = 98.0
+color = Color(0.035, 0.047, 0.067, 0.82)
+
+[node name="Title" type="Label" parent="Interface"]
+offset_left = 34.0
+offset_top = 29.0
+offset_right = 600.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(1, 0.82, 0.32, 1)
+theme_override_font_sizes/font_size = 18
+text = "Experiment D — Playable Fountain Court"
+
+[node name="Instructions" type="Label" parent="Interface"]
+offset_left = 34.0
+offset_top = 61.0
+offset_right = 600.0
+offset_bottom = 88.0
+theme_override_colors/font_color = Color(0.9, 0.93, 0.98, 1)
+text = "Move: arrows / WASD    F2: geometry    Esc: quit"
